@@ -32,8 +32,8 @@
     <title>React App</title>
   </head>
   <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
+
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
@@ -45,4 +45,45 @@
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
   </body>
+  <script defer>
+    (v = document.querySelector("#c")),
+      (c = v.getContext("2d")),
+      (l = 2.5),
+      (r = (i) => Math.random() * i);
+    (window.onresize = (q) => {
+      (s = []),
+        (w = innerWidth),
+        (h = Math.max(
+          document.body.scrollHeight,
+          document.body.offsetHeight,
+          document.documentElement.clientHeight,
+          document.documentElement.scrollHeight,
+          document.documentElement.offsetHeight
+        )),
+        (n = Math.random() * 100 + w / 5);
+      v.width = w;
+      v.height = h;
+      for (i = 0; i < n; i++) {
+        s.push({
+          c: `rgb(${r(255)},${r(255)},${r(255)})`,
+          x: r(w),
+          y: r(h),
+          v: r(3) + 1,
+        });
+      }
+    })();
+    setInterval((e) => {
+      c.clearRect(0, 0, w, h);
+      for (b of s) {
+        c.shadowBlur = 10;
+        c.shadowColor = b.c;
+        c.fillStyle = b.c;
+        c.beginPath();
+        c.arc(b.x, b.y, l, 0, 7);
+        c.fill();
+        b.y -= b.v;
+        b.y = b.y < -l ? h : b.y;
+      }
+    }, 50);
+  </script>
 </html>
