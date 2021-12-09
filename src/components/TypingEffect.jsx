@@ -6,7 +6,7 @@ const TypingEffect = () => {
     <>
       <Typewriter
         options={{
-          strings: ["Bom dia", "Boa tarde", "Boa noite"],
+          strings: ["Bom dia.", "Boa tarde.", "Boa noite."],
           autoStart: true,
           loop: true,
         }}
