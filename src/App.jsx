@@ -5,6 +5,8 @@ import Description from "./components/Description";
 import TypingEffect from "./components/TypingEffect";
 import { FaLinkedin, FaWhatsapp } from "react-icons/fa";
 import Button from "./components/Button";
+import imagem from '../src/images/denis.gif'; // with import
+
 
 function App() {
   return (
@@ -12,7 +14,13 @@ function App() {
 
       <div class="flex flex-wrap overflow-hidden xl:-mx-8 bg-black">
         <div class="w-full overflow-hidden xl:my-8 xl:px-8 xl:w-1/2">
-        <div class="lg:ml-24 m-2 z-20 items-center text-center lg:text-left justify-center lg:mt-64 mt-96 text-indigo-600 text-6xl ">
+
+        <div class="w-full lg:hidden overflow-hidden xl:my-8 xl:px-8 xl:w-1/2">
+          <img src={imagem} alt="imagem"></img>
+        </div>
+
+
+        <div class="lg:ml-24 m-2 z-20 items-center text-center lg:text-left justify-center mt-8 lg:mt-64 text-indigo-600 text-6xl ">
               <TypingEffect />
               <Description />
 
@@ -30,22 +38,13 @@ function App() {
             </div>
         </div>
 
-        <div class="w-full overflow-hidden xl:my-8 xl:px-8 xl:w-1/2">
-          <div class="custom-img"></div>
+        <div class="w-full overflow-hidden hidden lg:visible xl:my-8 xl:px-8 xl:w-1/2">
+          <img src={imagem} alt="imagem"></img>
         </div>
 
       </div>
-      {/* Fim do Mobile */}
 
-      {/* <header>
-        <Background />
-        <div class="relative z-20 hidden lg:grid-cols-2 lg:grid custom-img">
-          <div class="relative z-10 min-h-screen mr-10 min-w-screen max-w-none">
-            
-          </div>
-        </div>
-      </header> */}
-
+   
       <section>
         <div
           class="relative justify-center text-center"
