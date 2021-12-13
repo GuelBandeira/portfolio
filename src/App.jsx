@@ -5,60 +5,55 @@ import Description from "./components/Description";
 import TypingEffect from "./components/TypingEffect";
 import { FaLinkedin, FaWhatsapp } from "react-icons/fa";
 import Button from "./components/Button";
-import imagem from '../src/images/denis.gif'; // with import
-
+import imagem from "../src/images/denis.gif"; // with import
+import Slider from "./components/Slider";
 
 function App() {
   return (
     <>
-
-      <div class="flex flex-wrap overflow-hidden xl:-mx-8 bg-black">
-        <div class="w-full overflow-hidden xl:my-8 xl:px-8 xl:w-1/2">
-
-        <div class="w-full lg:hidden overflow-hidden xl:my-8 xl:px-8 xl:w-1/2">
+      <div class="flex flex-wrap xl:-mx-8 bg-black">
+        <div class="w-full lg:hidden xl:my-8 xl:px-8 xl:w-1/2">
           <img src={imagem} alt="imagem"></img>
         </div>
 
+        <div class="w-full xl:my-8 xl:px-8 xl:w-1/2">
+          <div class="lg:ml-24 m-2 z-20 items-center text-center lg:text-left justify-center mt-8 lg:mt-64 text-indigo-600 text-6xl ">
+            <TypingEffect />
+            <Description />
 
-        <div class="lg:ml-24 m-2 z-20 items-center text-center lg:text-left justify-center mt-8 lg:mt-64 text-indigo-600 text-6xl ">
-              <TypingEffect />
-              <Description />
+            <a href="https://api.whatsapp.com/send?phone=5524999987722&text=Oi%2C%20tudo%20bem%3F">
+              <Button>
+                <FaWhatsapp class="inline-flex mb-1 text-xl" /> Whatsapp
+              </Button>
+            </a>
 
-              <a href="https://api.whatsapp.com/send?phone=5524999987722&text=Oi%2C%20tudo%20bem%3F">
-                <Button>
-                  <FaWhatsapp class="inline-flex mb-1 text-xl" /> Whatsapp
-                </Button>
-              </a>
-
-              <a href="https://www.linkedin.com/in/jos%C3%A9-miguel-bandeira-de-novaes-09b1b91a2/">
-                <Button>
-                  <FaLinkedin class="inline-flex mb-1 text-xl" /> Linkedin
-                </Button>
-              </a>
-            </div>
+            <a href="https://www.linkedin.com/in/jos%C3%A9-miguel-bandeira-de-novaes-09b1b91a2/">
+              <Button>
+                <FaLinkedin class="inline-flex mb-1 text-xl" /> Linkedin
+              </Button>
+            </a>
+          </div>
         </div>
 
-        <div class="w-full overflow-hidden hidden lg:visible xl:my-8 xl:px-8 xl:w-1/2">
+        <div class="w-full lg:inline hidden xl:my-8 xl:px-8 xl:w-1/2">
           <img src={imagem} alt="imagem"></img>
         </div>
-
       </div>
 
-   
       <section>
         <div
-          class="relative justify-center text-center"
+          class="relative items-center text-center justify-center "
           style={{ backgroundColor: "#222" }}
         >
           <h1 class="text-white text-5xl pt-12">Conhecimentos</h1>
-          <div class="relative z-10 min-h-screen mr-10  min-w-screen max-w-none">
-            <p class="text-white pt-12 text-center justify-items-center max-w-md ml-32 ">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi,
-              perferendis repellat adipisci quis aliquid praesentium, et ea cum
-              fuga ut cupiditate placeat ad amet voluptatum dolorum fugit atque
-              inventore quibusdam?
-            </p>
-          </div>
+          <p class="mx-auto lg:w-5/12 text-white pt-12 text-center justify-items-center">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi,
+            perferendis repellat adipisci quis aliquid praesentium, et ea cum
+            fuga ut cupiditate placeat ad amet voluptatum dolorum fugit atque
+            inventore quibusdam?
+          </p>
+
+          <Slider />
         </div>
       </section>
 
@@ -133,9 +128,6 @@ function App() {
     neque.
   </p>
 </div> */}
-
-
-
     </>
   );
 }
