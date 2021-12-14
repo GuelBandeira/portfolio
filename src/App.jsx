@@ -11,50 +11,52 @@ import Carrousel from "./components/Slider";
 function App() {
   return (
     <>
-      <div className="flex flex-wrap xl:-mx-8 bg-black">
-        <div className="w-full lg:hidden xl:my-8 xl:px-8 xl:w-1/2">
-          <img src={imagem} alt="imagem"></img>
-        </div>
+      <header>
+        {/* Imagem Mobile  */}
+        <div className="flex flex-wrap xl:-mx-8 bg-black">
+          <div className="w-full lg:hidden xl:my-8 xl:px-8 xl:w-1/2">
+            <img src={imagem} alt="imagem"></img>
+          </div>
 
-        <div className="w-full xl:my-8 xl:px-8 xl:w-1/2">
-          <div className="lg:ml-24 m-2 z-20 items-center text-center lg:text-left justify-center mt-8 lg:mt-64 text-indigo-600 text-6xl ">
-            <TypingEffect />
-            <Description />
+          {/* Principal */}
+          <div className="w-full xl:my-8 xl:px-8 xl:w-1/2">
+            <div className="lg:ml-24 m-2 z-20 items-center text-center lg:text-left justify-center mt-8 lg:mt-64 text-indigo-600 text-6xl ">
+              <TypingEffect />
+              <Description />
 
-            <a href="https://api.whatsapp.com/send?phone=5524999987722&text=Oi%2C%20tudo%20bem%3F">
-              <Button>
-                <FaWhatsapp className="inline-flex mb-1 text-xl" /> Whatsapp
-              </Button>
-            </a>
+              <a href="https://api.whatsapp.com/send?phone=5524999987722&text=Oi%2C%20tudo%20bem%3F">
+                <Button>
+                  <FaWhatsapp className="inline-flex mb-1 text-xl" /> Whatsapp
+                </Button>
+              </a>
 
-            <a href="https://www.linkedin.com/in/jos%C3%A9-miguel-bandeira-de-novaes-09b1b91a2/">
-              <Button>
-                <FaLinkedin className="inline-flex mb-1 text-xl" /> Linkedin
-              </Button>
-            </a>
+              <a href="https://www.linkedin.com/in/jos%C3%A9-miguel-bandeira-de-novaes-09b1b91a2/">
+                <Button>
+                  <FaLinkedin className="inline-flex mb-1 text-xl" /> Linkedin
+                </Button>
+              </a>
+            </div>
+          </div>
+
+          {/* Imagem Desktop */}
+          <div className="w-full lg:inline hidden xl:my-8 xl:px-8 xl:w-1/2">
+            <img src={imagem} alt="imagem"></img>
           </div>
         </div>
+      </header>
 
-        <div className="w-full lg:inline hidden xl:my-8 xl:px-8 xl:w-1/2">
-          <img src={imagem} alt="imagem"></img>
-        </div>
-      </div>
-
-      <section>
-        <div
-          className="relative items-center text-center justify-center "
-          style={{ backgroundColor: "#222" }}
-        >
-          <h1 className="text-white text-5xl pt-12">Conhecimentos</h1>
-          <p className="mx-auto lg:w-5/12 text-white pt-12 text-center justify-items-center">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi,
-            perferendis repellat adipisci quis aliquid praesentium, et ea cum
-            fuga ut cupiditate placeat ad amet voluptatum dolorum fugit atque
-            inventore quibusdam?
-          </p>
-
-          <Carrousel />
-        </div>
+      <section
+        className="relative items-center text-center justify-center "
+        style={{ backgroundColor: "#222" }}
+      >
+        <h1 className="text-white text-5xl pt-12">Conhecimentos</h1>
+        <p className="mx-auto lg:w-5/12 text-white pt-12 text-center justify-items-center">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi,
+          perferendis repellat adipisci quis aliquid praesentium, et ea cum fuga
+          ut cupiditate placeat ad amet voluptatum dolorum fugit atque inventore
+          quibusdam?
+        </p>
+        <Carrousel />
       </section>
 
       {/* 
