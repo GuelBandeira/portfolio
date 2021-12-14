@@ -45,11 +45,8 @@ function App() {
         </div>
       </header>
 
-      <section
-        className="relative items-center text-center justify-center "
-        style={{ backgroundColor: "#222" }}
-      >
-        <h1 className="text-white text-5xl pt-12">Conhecimentos</h1>
+      <section style={{ backgroundColor: "#222" }}>
+        <h1 className="text-white text-center text-5xl pt-12">Conhecimentos</h1>
         <p className="mx-auto lg:w-5/12 text-white pt-12 text-center justify-items-center">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi,
           perferendis repellat adipisci quis aliquid praesentium, et ea cum fuga

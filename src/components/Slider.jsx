@@ -1,55 +1,62 @@
 import React from "react";
 import Slider from "infinite-react-carousel";
+import {
+  FaCss3,
+  FaGit,
+  FaHtml5,
+  FaPhp,
+  FaPython,
+  FaReact,
+} from "react-icons/fa";
+import { SiTailwindcss, SiJavascript, SiCplusplus } from "react-icons/si";
 
 const settings = {
   autoplay: true,
+  centerMode: true,
   dots: true,
   duration: 100,
-  gutter: 100,
   initialSlide: true,
   overScan: 1,
   slidesToShow: 4,
   wheel: true,
-  arrowsBlock: false,
+  arrows: false,
 };
 
 const Carrousel = () => {
   return (
     <>
-      <div>
-        <Slider
-          className="grabbable p-6 mt-24 pt-0 lg:pt-0 lg:p-40 lg:pb-4"
-          {...settings}
-        >
-          <div>
-            <h3>1</h3>
+      <div
+        className="grabbable p-12 mt-24 pt-0 lg:pt-0 lg:p24 lg:pb-4 text-2xl lg:text-6xl pb-40"
+        // style={{ marginLeft: "120px" }}
+      >
+        <Slider {...settings}>
+          <div className="text-orange-400">
+            <FaHtml5 />
           </div>
-          <div>
-            <h3>2</h3>
+          <div className="text-blue-400">
+            <FaCss3 />
           </div>
-          <div>
-            <h3>3</h3>
+          <div className="text-yellow-400">
+            <SiJavascript />
           </div>
-          <div>
-            <h3>4</h3>
+
+          <div className="text-cyan-400">
+            <FaReact />
           </div>
-          <div>
-            <h3>5</h3>
+          <div className="text-cyan-300">
+            <SiTailwindcss />
           </div>
-          <div>
-            <h3>6</h3>
+          <div className="text-blue-600">
+            <SiCplusplus />
           </div>
-          <div>
-            <h3>7</h3>
+          <div className="text-green-400">
+            <FaPython />
           </div>
-          <div>
-            <h3>8</h3>
+          <div className="text-indigo-400">
+            <FaPhp />
           </div>
-          <div>
-            <h3>9</h3>
-          </div>
-          <div>
-            <h3>10</h3>
+          <div className="text-red-400">
+            <FaGit />
           </div>
         </Slider>
       </div>
