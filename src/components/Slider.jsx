@@ -18,7 +18,7 @@ const settings = {
   centerMode: true,
   dots: true,
   duration: 100,
-  initialSlide: 1,
+  initialSlide: 0,
   overScan: 1,
   slidesToShow: 3,
   wheel: true,
@@ -41,7 +41,7 @@ const Carrousel = () => {
     <>
       <BrowserView>
         <Slider {...settings} className="grabbable mt-24 text-6xl">
-          <div className="text-orange-400">
+          <div className="text-orange-400 ">
             <FaHtml5 />
           </div>
           <div className="text-blue-400">

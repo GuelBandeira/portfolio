@@ -15,7 +15,10 @@ function App() {
       <SmoothScroll>
         <header className="-mb-2">
           {/* Imagem Mobile  */}
-          <div className="flex flex-wrap xl:-mx-8 bg-black">
+          <div
+            className="flex flex-wrap xl:-mx-8"
+            style={{ backgroundColor: "#191919" }}
+          >
             <div className="w-full lg:hidden xl:my-8 xl:px-8 xl:w-1/2">
               <img src={imagem} alt="imagem"></img>
             </div>
@@ -23,7 +26,7 @@ function App() {
             {/* Principal */}
             <div className="w-full xl:my-8 xl:px-8 xl:w-1/2">
               <div className="lg:ml-24 m-2 z-20 items-center text-center lg:text-left justify-center mt-8 lg:mt-64 text-indigo-600 text-6xl ">
-                <TypingEffect />
+                <TypingEffect className="text-shadow-lg" />
                 <Description />
 
                 <a href="https://api.whatsapp.com/send?phone=5524999987722&text=Oi%2C%20tudo%20bem%3F">
@@ -46,7 +49,6 @@ function App() {
             </div>
           </div>
         </header>
-
         {/*
          COOL ANIMATION
   
@@ -54,9 +56,8 @@ function App() {
           <span class="animate-ping absolute inline-flex h-screen w-full rounded-full bg-purple-400 opacity-75"></span>
           <span class="relative inline-flex rounded-full h-3 w-3 bg-purple-500"></span>
         </span> */}
-
         <section className="text-white text-center justify-items-center">
-          <div class="bg-black -mb-1">
+          <div class="-mb-1" style={{ backgroundColor: "#191919" }}>
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
               <path
                 fill="#4F46E5"
@@ -65,25 +66,44 @@ function App() {
               ></path>
             </svg>
           </div>
-          <div class="bg-indigo-600">
-            <h1 className="text-5xl pt-12">Conhecimentos</h1>
-            <p className="mx-auto lg:w-5/12 pt-8">
-              Iniciei nessa área quando tinha 12 anos de idade, comecei me
-              interessando por programação e futuramente só fui adentro ao
-              grande abismo de desenvolvimento
-            </p>
+          <div class="bg-indigo-600 ">
+            <h1 className="text-5xl pt-12 box-shadow-3d shadow-indigo-500">
+              Conhecimentos
+            </h1>
+            <blockquote>
+              <p className="mx-auto lg:w-5/12 pt-8 box-shadow-3d-minus">
+                "A única maneira de fazer um grande trabalho é amando o que se
+                faz." <br></br>- Steve Jobs
+              </p>
+            </blockquote>
 
             <Carrousel />
-            <svg viewBox="0 0 1440 319">
+            <svg viewBox="0 0 1440 319" className="-mb-1">
               <path
-                fill="#000"
+                fill="#191919"
                 fill-opacity="1"
                 d="M0,32L48,80C96,128,192,224,288,224C384,224,480,128,576,90.7C672,53,768,75,864,96C960,117,1056,139,1152,149.3C1248,160,1344,160,1392,160L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
               ></path>
             </svg>
           </div>
         </section>
-        {/* 
+        <section className="" style={{ backgroundColor: "#191919" }}>
+          {/* HEADER */}
+          <h1 className="text-white text-center text-6xl">
+            Alguns de meus projetos:
+          </h1>
+
+          <div className="grid grid-cols-2 mt-14">
+            <div
+              className="rounded-t-md min-h-screen max-w-md shadow-md"
+              style={{ backgroundColor: "#232323" }}
+            ></div>
+            <div className=""></div>
+          </div>
+        </section>
+      </SmoothScroll>
+
+      {/* 
 <header
   className="flex items-center justify-center h-screen mb-12 bg-fixed bg-center bg-cover custom-img"
 >
@@ -154,7 +174,6 @@ function App() {
     neque.
   </p>
 </div> */}
-      </SmoothScroll>
     </>
   );
 }

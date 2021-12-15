@@ -29,11 +29,19 @@
 ::-webkit-scrollbar {
   width: 0;
 }
-
-.float-left {
-  top: 0;
+.box-shadow-3d {
+  text-shadow: -1px -1px 0px #6a63eb, 1px 1px 0px #6a63eb, 2px 2px 0px #6a63eb,
+    3px 3px 0px #6a63eb, 4px 4px 0px #6a63eb, 5px 5px 0px #6a63eb;
+}
+.box-shadow-3d-minus {
+  text-shadow: 1px 1px 0px #6a63eb, 2px 2px 0px #6a63eb, 3px 3px 0px #6a63eb,
+    4px 4px 0px #6a63eb;
 }
 
+.box-shadow-3d-sm {
+  text-shadow: 0px 0px 10px #6a63eb, 1px 1px 10px #6a63eb, 2px 2px 10px #6a63eb,
+    3px 3px 10px #6a63eb;
+}
 html,
 body {
   overflow-x: hidden;
