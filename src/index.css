@@ -40,6 +40,7 @@ body {
 }
 
 body {
+  /* font-family: "Open Sans", sans-serif; */
   font-family: "Patua One", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

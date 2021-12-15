@@ -11,9 +11,6 @@ import {
 import { SiTailwindcss, SiJavascript, SiCplusplus } from "react-icons/si";
 import { BrowserView, MobileView } from "react-device-detect";
 
-const MyComponent = () => {
-  return <></>;
-};
 const settings = {
   autoplay: true,
   centerPadding: 550,
@@ -21,7 +18,7 @@ const settings = {
   centerMode: true,
   dots: true,
   duration: 100,
-  initialSlide: true,
+  initialSlide: 1,
   overScan: 1,
   slidesToShow: 3,
   wheel: true,
@@ -33,7 +30,7 @@ const settingsMobile = {
   centerMode: true,
   dots: true,
   duration: 100,
-  initialSlide: true,
+  initialSlide: 5,
   overScan: 1,
   slidesToShow: 3,
   wheel: true,

@@ -47,16 +47,6 @@ function App() {
           </div>
         </header>
 
-        {/* position: relative; display: flex; flex-direction: column; align-items:
-      center; min-height: 400px; padding-top: 100px; */}
-
-        {/* position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        overflow: hidden;
-        line-height: 0; */}
-
         {/*
          COOL ANIMATION
   
@@ -64,6 +54,7 @@ function App() {
           <span class="animate-ping absolute inline-flex h-screen w-full rounded-full bg-purple-400 opacity-75"></span>
           <span class="relative inline-flex rounded-full h-3 w-3 bg-purple-500"></span>
         </span> */}
+
         <section className="text-white text-center justify-items-center">
           <div class="bg-black -mb-1">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
@@ -74,9 +65,9 @@ function App() {
               ></path>
             </svg>
           </div>
-          <div class="bg-indigo-600 relative">
+          <div class="bg-indigo-600">
             <h1 className="text-5xl pt-12">Conhecimentos</h1>
-            <p className="mx-auto lg:w-5/12 pt-8 justify-items-center">
+            <p className="mx-auto lg:w-5/12 pt-8">
               Iniciei nessa área quando tinha 12 anos de idade, comecei me
               interessando por programação e futuramente só fui adentro ao
               grande abismo de desenvolvimento
