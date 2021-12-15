@@ -9,27 +9,41 @@ import {
   FaReact,
 } from "react-icons/fa";
 import { SiTailwindcss, SiJavascript, SiCplusplus } from "react-icons/si";
+import { BrowserView, MobileView } from "react-device-detect";
 
+const MyComponent = () => {
+  return <></>;
+};
 const settings = {
+  autoplay: true,
+  centerPadding: 550,
+  shift: 80,
+  centerMode: true,
+  dots: true,
+  duration: 100,
+  initialSlide: true,
+  overScan: 1,
+  slidesToShow: 3,
+  wheel: true,
+  arrows: false,
+};
+
+const settingsMobile = {
   autoplay: true,
   centerMode: true,
   dots: true,
   duration: 100,
   initialSlide: true,
   overScan: 1,
-  slidesToShow: 4,
+  slidesToShow: 3,
   wheel: true,
   arrows: false,
 };
-
 const Carrousel = () => {
   return (
     <>
-      <div
-        className="grabbable p-12 mt-24 pt-0 lg:pt-0 lg:p24 lg:pb-4 text-2xl lg:text-6xl pb-40"
-        // style={{ marginLeft: "120px" }}
-      >
-        <Slider {...settings}>
+      <BrowserView>
+        <Slider {...settings} className="grabbable mt-24 text-6xl">
           <div className="text-orange-400">
             <FaHtml5 />
           </div>
@@ -59,7 +73,39 @@ const Carrousel = () => {
             <FaGit />
           </div>
         </Slider>
-      </div>
+      </BrowserView>
+      <MobileView>
+        <Slider {...settingsMobile} className="grabbable mt-24 text-6xl">
+          <div className="text-orange-400">
+            <FaHtml5 />
+          </div>
+          <div className="text-blue-400">
+            <FaCss3 />
+          </div>
+          <div className="text-yellow-400">
+            <SiJavascript />
+          </div>
+
+          <div className="text-cyan-400">
+            <FaReact />
+          </div>
+          <div className="text-cyan-300">
+            <SiTailwindcss />
+          </div>
+          <div className="text-blue-600">
+            <SiCplusplus />
+          </div>
+          <div className="text-green-400">
+            <FaPython />
+          </div>
+          <div className="text-indigo-400">
+            <FaPhp />
+          </div>
+          <div className="text-red-400">
+            <FaGit />
+          </div>
+        </Slider>
+      </MobileView>
     </>
   );
 };
