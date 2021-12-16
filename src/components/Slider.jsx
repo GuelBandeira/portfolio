@@ -13,101 +13,79 @@ import { BrowserView, MobileView } from "react-device-detect";
 
 const settings = {
   autoplay: true,
-  centerPadding: 550,
-  shift: 80,
   centerMode: true,
-  dots: true,
-  duration: 100,
+  duration: 1000,
   initialSlide: 0,
-  overScan: 1,
-  slidesToShow: 3,
-  wheel: true,
+  slidesToShow: 4,
   arrows: false,
 };
 
-const settingsMobile = {
-  autoplay: true,
-  centerMode: true,
-  dots: true,
-  duration: 100,
-  initialSlide: 5,
-  overScan: 1,
-  slidesToShow: 3,
-  wheel: true,
-  arrows: false,
-};
 const Carrousel = () => {
   return (
     <>
-      <BrowserView>
-        <Slider {...settings} className="grabbable mt-24 text-6xl">
-          <div className="text-orange-400 ">
-            <FaHtml5 />
-          </div>
-          <div className="text-blue-400">
-            <FaCss3 />
-          </div>
-          <div className="text-yellow-400">
-            <SiJavascript />
-          </div>
-
-          <div className="text-cyan-400">
-            <FaReact />
-          </div>
-          <div className="text-cyan-300">
-            <SiTailwindcss />
-          </div>
-          <div className="text-blue-600">
-            <SiCplusplus />
-          </div>
-          <div className="text-green-400">
-            <FaPython />
-          </div>
-          <div className="text-indigo-400">
-            <FaPhp />
-          </div>
-          <div className="text-red-400">
-            <FaGit />
-          </div>
-        </Slider>
-      </BrowserView>
-      <MobileView>
-        <Slider {...settingsMobile} className="grabbable mt-24 text-6xl">
-          <div className="text-orange-400">
-            <FaHtml5 />
-          </div>
-          <div className="text-blue-400">
-            <FaCss3 />
-          </div>
-          <div className="text-yellow-400">
-            <SiJavascript />
-          </div>
-
-          <div className="text-cyan-400">
-            <FaReact />
-          </div>
-          <div className="text-cyan-300">
-            <SiTailwindcss />
-          </div>
-          <div className="text-blue-600">
-            <SiCplusplus />
-          </div>
-          <div className="text-green-400">
-            <FaPython />
-          </div>
-          <div className="text-indigo-400">
-            <FaPhp />
-          </div>
-          <div className="text-red-400">
-            <FaGit />
-          </div>
-        </Slider>
-      </MobileView>
+      <Slider
+        {...settings}
+        className="grabbable lg:ml-72 mt-24 text-6xl md:ml-20 max-w-screen-md mb-12"
+      >
+        <div className="text-orange-400 ">
+          <FaHtml5 />
+        </div>
+        <div className="text-blue-400">
+          <FaCss3 />
+        </div>
+        <div className="text-yellow-400">
+          <SiJavascript />
+        </div>
+        <div className="text-cyan-400">
+          <FaReact />
+        </div>
+        <div className="text-cyan-300">
+          <SiTailwindcss />
+        </div>
+        <div className="text-blue-600">
+          <SiCplusplus />
+        </div>
+        <div className="text-green-400">
+          <FaPython />
+        </div>
+        <div className="text-indigo-400">
+          <FaPhp />
+        </div>
+        <div className="text-red-400">
+          <FaGit />
+        </div>
+      </Slider>
     </>
   );
 };
 
 export default Carrousel;
+
+// const settingsMobile = {
+//   autoplay: true,
+//   centerMode: true,
+//   dots: true,
+//   duration: 100,
+//   initialSlide: 5,
+//   overScan: 1,
+//   slidesToShow: 3,
+//   wheel: true,
+//   arrows: false,
+// };
+
+// const settings = {
+//   autoplay: true,
+//   centerPadding: 550,
+//   shift: 80,
+//   centerMode: true,
+//   dots: true,
+//   duration: 100,
+//   initialSlide: 0,
+//   overScan: 1,
+//   slidesToShow: 3,
+//   wheel: true,
+//   arrows: false,
+// };
 
 // import React, { Component } from 'react';
 // import Slider from 'infinite-react-carousel';
