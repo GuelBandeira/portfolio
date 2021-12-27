@@ -3,17 +3,46 @@ import "./App.css";
 import Background from "./components/Background";
 import Description from "./components/Description";
 import TypingEffect from "./components/TypingEffect";
-import { FaLinkedin, FaWhatsapp, FaReact } from "react-icons/fa";
+import {
+  FaLinkedin,
+  FaWhatsapp,
+  FaReact,
+  FaCode,
+  FaPalette,
+} from "react-icons/fa";
 import Button from "./components/Button";
 import imagem from "../src/images/denis.gif"; // with import
-import Carrousel from "./components/Slider";
 import SmoothScroll from "./components/SmoothScroll";
 import Projects from "./components/Projects";
 import CustomScroll from "react-custom-scroll";
+import { fadeInUp } from "react-animations";
+import Radium, { StyleRoot } from "radium";
+import AnimatedCursor from "react-animated-cursor";
+import { BiCodeBlock } from "react-icons/bi";
+import { IoIosColorPalette } from "react-icons/io";
+import MainText from "./components/Card/MainText";
+import Icon from "./components/Card/Icon";
+import SubText from "./components/Card/SubText";
+import Card from "./components/Card/Card";
+import ContainerCard from "./components/Card/ContainerCard";
 
 function App() {
   return (
     <>
+      <AnimatedCursor
+        //Tamanho cursor
+        innerSize={8}
+        //Tamanho bola externa
+        outerSize={30}
+        //Cor
+        color="255, 255, 255"
+        //Transparência
+        outerAlpha={0.2}
+        //Tamanho do cursor Hover
+        innerScale={2}
+        //Tamanho da bola externa hover
+        outerScale={2}
+      />
       <header className="-mb-2">
         {/* Imagem Mobile  */}
         <div className="flex flex-wrap" style={{ backgroundColor: "#191919" }}>
@@ -84,8 +113,111 @@ function App() {
               faz." <br></br>- Steve Jobs
             </p>
           </blockquote>
-          <Carrousel />
+          {/* <div className="bg-grey-light py-8 w-full flex justify-center items-center">
+            <div className="bg-black rounded w-1/4 shadow hover:shadow-md duration-4">
+              <div className="flex flex-row justify-between uppercase font-bold text-blue-dark border-b p-6">
+                <p>My awesome item name</p>
+                <div className="cursor-pointer text-grey-dark hover:text-blue duration-4">
+                  <i className="fas fa-ellipsis-v"></i>
+                </div>
+              </div>
+              <div className="p-6 text-grey-darker text-justify flex flex-col">
+                <img
+                  src="https://picsum.photos/300/300"
+                  alt="Some image"
+                  className="w-64 flex self-center rounded-full shadow-lg mb-6"
+                ></img>
+                <p className="font-bold text-sm uppercase mb-2 text-blue-darker">
+                  Item description:
+                </p>
+                <span className="text-grey-darker">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </span>
+                <div className="pt-4">
+                  <span className="uppercase bg-green text-white font-bold p-2 text-xs shadow rounded">
+                    25% off
+                  </span>
+                  <span className="uppercase bg-yellow-dark text-grey-darkest font-bold p-2 text-xs shadow rounded">
+                    stock: 3
+                  </span>
+                </div>
+              </div>
+              <div className="p-6 text-grey-darker text-justify flex flex-row justify-end border-t">
+                <button className="uppercase self-end text-blue mx-8 text-sm hover:text-blue-dark duration-4 self-center">
+                  details
+                </button>
+                <button className="uppercase self-end bg-green font-bold text-white px-6 py-4 rounded hover:bg-green-dark duration-4">
+                  <i className="fa fa-cart-plus mr-4"></i>Add to cart
+                </button>
+              </div>
+            </div>
+          </div> */}
 
+          <ContainerCard>
+            <Card>
+              <Icon>
+                <FaCode />
+              </Icon>
+              <MainText>Front-end</MainText>
+              <SubText>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Repellendus, omnis! Dignissimos minima quo veritatis error?
+              </SubText>
+            </Card>
+
+            <Card>
+              <Icon>
+                <BiCodeBlock />
+              </Icon>
+              <MainText>Back-end</MainText>
+              <SubText>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Repellendus, omnis! Dignissimos minima quo veritatis error?
+              </SubText>
+            </Card>
+
+            <Card>
+              <Icon>
+                <IoIosColorPalette />
+              </Icon>
+              <MainText>Criatividade</MainText>
+              <SubText>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Repellendus, omnis! Dignissimos minima quo veritatis error?
+              </SubText>
+            </Card>
+          </ContainerCard>
+          {/* <div className="grid grid-cols-3 gap-24 m-5 justify-center items-center">
+            <div className="bg-indigo-700 rounded-2xl p-6">
+              <div className="rounded-full bg-indigo-900 self-center ">
+                <FaCode />
+              </div>
+
+              <h1>Front-end</h1>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Repudiandae iure molestias autem excepturi, dolores provident.
+              </p>
+            </div>
+
+            <div className="">
+              <div className="bg-indigo-700 h-64 rounded-2xl p-6">
+                <div className="rounded-full bg-indigo-900 w-24 p-5 text-6xl">
+                  <FaCode className="" />
+                </div>
+
+                <h1>Back-end</h1>
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Repudiandae iure molestias autem excepturi, dolores provident.
+                </p>
+              </div>
+            </div>
+            <div className="">test</div>
+          </div> */}
           <svg viewBox="0 0 1440 319" className="-mb-1">
             <path
               fill="#191919"
@@ -113,6 +245,8 @@ function App() {
           <FaReact className="inline-flex text-3xl ml-2 mb-1 text-cyan-400 animate-spin" />
         </h1>
       </footer>
+
+      <div id="absolute -z-30 top-0 left-0 w-full h-full"></div>
       {/* 
 <header
   className="flex items-center justify-center h-screen mb-12 bg-fixed bg-center bg-cover custom-img"

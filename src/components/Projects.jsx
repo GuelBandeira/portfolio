@@ -33,7 +33,12 @@ const Projects = () => {
               eletrônicos para a escola técnica. Desse modo, realizamos uma
               parceria com a Fundação CSN, e criamos um site do zero, para o
               aluno realizar sua inscrição, verificar as equipes do campeonato,
-              além de poder visualizar chaveamento.
+              além de poder visualizar chaveamento.<br></br>
+              <span className="p-4">
+                <span className="block">✅ Cadastro de times</span>
+                <span className="block">✅ Chaveamento</span>
+                <span className="block">✅ Equipes</span>
+              </span>
             </p>
             <span className="inline-flex text-4xl text-indigo-600 space-x-5 pt-10 text-center items-center justify-items-center">
               <FaHtml5 /> <SiJavascript /> <SiTailwindcss /> <FaPhp />
@@ -52,6 +57,7 @@ const Projects = () => {
             </div>
           </div>
 
+          {/* IMAGEM */}
           <div>
             <div className="z-30 flex items-center justify-center">
               <div className="max-w-3xl rounded-lg shadow-2xl shadow-indigo-900 border-8 border-indigo-600 z-10 mt-64">
