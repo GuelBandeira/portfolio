@@ -146,7 +146,7 @@ function App() {
                 </div>
               </div>
               <div className="p-6 text-grey-darker text-justify flex flex-row justify-end border-t">
-                <button className="uppercase self-end text-blue mx-8 text-sm hover:text-blue-dark duration-4 self-center">
+                <button className="uppercase text-blue mx-8 text-sm hover:text-blue-dark duration-4 self-center">
                   details
                 </button>
                 <button className="uppercase self-end bg-green font-bold text-white px-6 py-4 rounded hover:bg-green-dark duration-4">
@@ -230,7 +230,7 @@ function App() {
 
       <Projects />
 
-      <footer className="bg-indigo-600 ">
+      <footer className="bg-indigo-600 pb-2 ">
         <div class="" style={{ backgroundColor: "#191919" }}>
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
             <path
