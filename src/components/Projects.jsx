@@ -40,14 +40,21 @@ const Projects = () => {
             <h1 className=" text-center text-3xl mt-56 font-bold">
               ETPC E-SPORTS
             </h1>
-            <p className="text-justify font-thin max-w-lg p-9 lg:p-0">
+            <p className="text-justify font-thin max-w-xl p-9 lg:p-0">
               O site ETPC E-SPORTS faz parte de uma iniciativa criada por mim e
               meus amigos, com o intuito de trazer o âmbito dos esportes
               eletrônicos para a escola técnica. Desse modo, realizamos uma
-              parceria com a Fundação CSN, e criamos um site do zero, para o
-              aluno realizar sua inscrição, verificar as equipes do campeonato,
-              além de poder visualizar chaveamento.<br></br>
-              <span className="p-4 text-justify font-thin max-w-lg justify-items-start">
+              parceria com a Fundação CSN para a divulgação, e criamos um site
+              do zero.<br></br>
+              <span className="p-4 justify-items-start font-thin max-w-lg self-center">
+                <span className="block">
+                  <FaCheckCircle className="inline-flex mr-2 mb-1" />
+                  Identidade Visual
+                </span>
+                <span className="block">
+                  <FaCheckCircle className="inline-flex mr-2 mb-1" />
+                  UX
+                </span>
                 <span className="block">
                   <FaCheckCircle className="inline-flex mr-2 mb-1" />
                   Cadastro de times
