@@ -2,6 +2,7 @@ import React from "react";
 import {
   FaCheck,
   FaCheckCircle,
+  FaDatabase,
   FaHtml5,
   FaPhp,
   FaTable,
@@ -26,21 +27,31 @@ const Projects = () => {
         >
           Alguns de meus projetos:
         </h1>
+        <div class="embed-container">
+          <iframe
+            src="https://www.youtube.com/embed/QILiHiTD3uc"
+            frameborder="0"
+            allowfullscreen
+          ></iframe>
+        </div>
 
         <section className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-4 py-12 text-white">
-          <div className="video-container absolute z-50 ">
-            <iframe
-              className="rounded-2xl mx-auto lg:ml-16 border-8 border-indigo-500 shadow-2xl shadow-indigo-900"
-              width="600"
-              height="350"
-              src="https://www.youtube.com/embed/tgbNymZ7vqY"
-            ></iframe>
-          </div>
-          <div className="w-full bg-indigo-600 shadow-indigo-900 shadow-2xl rounded-lg mt-40 flex space-y-5 flex-col justify-center items-center">
-            <h1 className=" text-center text-3xl mt-56 font-bold">
+          <div className="w-full bg-indigo-600 shadow-indigo-900 shadow-2xl rounded-lg mt-64 flex space-y-5 flex-col justify-center items-center">
+            <div className="absolute z-50 mb-96 justify-items-center text-center justify-center">
+              <iframe
+                frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+                className=" rounded-2xl frame mx-auto mb-96 border-8 border-indigo-500 shadow-2xl shadow-indigo-900"
+                width="650"
+                height="350"
+                src="https://www.youtube.com/embed/tgbNymZ7vqY"
+              ></iframe>
+            </div>
+            <h1 className=" text-center text-3xl font-bold pt-32">
               ETPC E-SPORTS
             </h1>
-            <p className="text-justify font-thin max-w-xl p-9 lg:p-0">
+            <p className="text-justify font-thin max-w-xl pt-9 pr-9 pl-9 lg:p-0">
               O site ETPC E-SPORTS faz parte de uma iniciativa criada por mim e
               meus amigos, com o intuito de trazer o âmbito dos esportes
               eletrônicos para a escola técnica. Desse modo, realizamos uma
@@ -72,6 +83,7 @@ const Projects = () => {
 
             <span className="inline-flex text-4xl text-white space-x-5 text-center items-center justify-items-center">
               <FaHtml5 /> <SiJavascript /> <SiTailwindcss /> <FaPhp />
+              <FaDatabase />
             </span>
             <div className="block pb-10 pt-2">
               <a
