@@ -19,7 +19,7 @@ const Projects = () => {
   return (
     <>
       {/* PROJETOS */}
-      <main style={{ backgroundColor: "#191919" }}>
+      <main className="imagem-fundo">
         {/* HEADER */}
         <h1
           className="text-white text-center text-6xl"
@@ -27,27 +27,26 @@ const Projects = () => {
         >
           Alguns de meus projetos:
         </h1>
-        <div class="embed-container">
+        {/* <div class="embed-container z-50 justify-items-center text-center justify-cente">
           <iframe
             src="https://www.youtube.com/embed/QILiHiTD3uc"
             frameborder="0"
             allowfullscreen
+            className=" rounded-2xl frame mx-auto border-8 border-indigo-500 shadow-2xl shadow-indigo-900"
           ></iframe>
-        </div>
+        </div> */}
 
         <section className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-4 py-12 text-white">
-          <div className="w-full bg-indigo-600 shadow-indigo-900 shadow-2xl rounded-lg mt-64 flex space-y-5 flex-col justify-center items-center">
-            <div className="absolute z-50 mb-96 justify-items-center text-center justify-center">
-              <iframe
-                frameborder="0"
-                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen
-                className=" rounded-2xl frame mx-auto mb-96 border-8 border-indigo-500 shadow-2xl shadow-indigo-900"
-                width="650"
-                height="350"
-                src="https://www.youtube.com/embed/tgbNymZ7vqY"
-              ></iframe>
-            </div>
+          <div className="embed-container mx-auto self-center max-w-2xl absolute z-50">
+            <iframe
+              frameborder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+              className=" rounded-2xl frame border-8 border-indigo-500 shadow-2xl shadow-indigo-900"
+              src="https://www.youtube.com/embed/tgbNymZ7vqY"
+            ></iframe>
+          </div>
+          <div className="w-full bg-indigo-600 shadow-indigo-900 shadow-2xl rounded-lg -mt-24 flex space-y-5 flex-col justify-center items-center">
             <h1 className=" text-center text-3xl font-bold pt-32">
               ETPC E-SPORTS
             </h1>
