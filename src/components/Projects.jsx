@@ -37,12 +37,11 @@ const Projects = () => {
         </div> */}
 
         <section className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-4 py-12 text-white">
-          <div className="embed-container mx-auto self-center max-w-2xl absolute z-50">
+          <div className="embed-container mx-auto self-center max-w-2xl absolute z-50 shadow-2xl shadow-indigo-900 rounded-2xl">
             <iframe
-              frameborder="0"
               allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
-              className=" rounded-2xl frame border-8 border-indigo-500 shadow-2xl shadow-indigo-900"
+              allowFullScreen
+              className=" rounded-2xl border-8 border-indigo-500 "
               src="https://www.youtube.com/embed/tgbNymZ7vqY"
             ></iframe>
           </div>

@@ -49,6 +49,7 @@ body {
   font-family: "Patua One", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
 }
 @media only screen and (max-width: 600px) {
   html,
