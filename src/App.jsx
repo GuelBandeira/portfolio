@@ -11,8 +11,7 @@ import {
   FaPalette,
 } from "react-icons/fa";
 import Button from "./components/Button";
-import imagem from "../src/images/guel.png"; // with import
-import SmoothScroll from "./components/SmoothScroll";
+import imagem from "../src/images/test.png"; // with import
 import Projects from "./components/Projects";
 import CustomScroll from "react-custom-scroll";
 import { fadeInUp } from "react-animations";
@@ -26,7 +25,6 @@ import SubText from "./components/Card/SubText";
 import Card from "./components/Card/Card";
 import ContainerCard from "./components/Card/ContainerCard";
 
-// Preto mais claro = #191919
 function App() {
   return (
     <>
@@ -46,19 +44,20 @@ function App() {
       />
       <header>
         {/* Imagem Mobile  */}
-        <div className="flex imagem-fundo flex-wrap pb-40 relative">
-          <div className="lg:hidden max-w-screen-lg mx-auto pb-10 ">
+        <div className="flex flex-wrap pb-40 relative imagem-fundo">
+          <div className="lg:hidden max-w-screen-lg mx-auto pt-5 ">
             <img
               src={imagem}
-              className="mx-auto h-64 w-full"
+              className="mx-auto h-64 w-full shadow-indigo-600"
               alt="imagem"
+              draggable="false"
             ></img>
           </div>
 
           {/* Principal */}
           <div className="w-full xl:my-8 xl:px-8 xl:w-1/2">
             <div className="lg:ml-24 m-2 items-center text-center lg:text-left justify-center mt-8 lg:mt-64 text-indigo-600 text-6xl ">
-              <TypingEffect className="text-shadow-lg" />
+              <TypingEffect />
               <Description />
               <div className="space-x-4">
                 <a
@@ -89,7 +88,8 @@ function App() {
             <img
               src={imagem}
               alt="imagem"
-              className="lg:ml-24 items-center text-center float-left justify-center lg:mt-0 xl:mt-44 text-indigo-600 text-6xl "
+              draggable="false"
+              className=" lg:ml-24 items-center text-center float-left justify-center lg:mt-0 xl:mt-44 text-indigo-600 text-6xl "
             ></img>
           </div>
         </div>
@@ -122,7 +122,7 @@ function App() {
             Conhecimentos
           </h1>
           <blockquote>
-            <p className="mx-auto lg:w-5/12 text-lg pt-8 box-shadow-3d-minus">
+            <p className="mx-auto lg:w-5/12 text-lg pt-8 pb-4 -mb-1 box-shadow-3d-minus">
               "A única maneira de fazer um grande trabalho é amando o que se
               faz." <br></br>- Steve Jobs
             </p>
@@ -136,11 +136,10 @@ function App() {
             </Icon>
             <MainText>Front-end</MainText>
             <SubText>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Repellendus, omnis! Dignissimos minima quo veritatis error?
+              Atualmente, eu tenho um foco maior por Front-end e amo utilizar
+              React.js junto com Tailwind CSS
             </SubText>
           </Card>
-
           <Card>
             <Icon>
               <BiCodeBlock />
@@ -158,8 +157,8 @@ function App() {
             </Icon>
             <MainText>Criatividade</MainText>
             <SubText>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Repellendus, omnis! Dignissimos minima quo veritatis error?
+              Eu amo realizar código e criativo, pois eu crio o design & código,
+              assim tudo flui da melhor maneira
             </SubText>
           </Card>
         </ContainerCard>
@@ -174,7 +173,7 @@ function App() {
         <div class=" wave wave4"></div>
       </section>
       <Projects />
-      <footer className="bg-indigo-600 pb-2 ">
+      <footer className="bg-indigo-600 pb-2">
         {/* WAVE ESTATICA */}
         {/* <div class="imagem-fundo">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
@@ -185,7 +184,7 @@ function App() {
             ></path>
           </svg>
         </div> */}
-        <section id="wave" class="relative">
+        <section id="wave" class="relative -mb-1">
           <div class="wave wave1"></div>
           <div class="wave wave2"></div>
           <div class=" wave wave3"></div>
@@ -193,7 +192,7 @@ function App() {
         </section>
         <h1 className="text-2xl text-white text-center pt-12 box-shadow-3d shadow-indigo-500">
           Esse site foi criado com muito 💜,☕ &
-          <FaReact className="inline-flex text-3xl ml-2 mb-1 text-cyan-400 animate-spin" />
+          <FaReact className="inline-flex text-3xl ml-2 lg:mb-1 text-cyan-400 animate-spin" />
         </h1>
       </footer>
     </>
