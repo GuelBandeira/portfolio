@@ -19,7 +19,7 @@ const Projects = () => {
   return (
     <>
       {/* PROJETOS */}
-      <main className="imagem-fundo">
+      <main className="imagem-fundo pb-32 pt-40">
         {/* HEADER */}
         <h1
           className="text-white text-center text-6xl"

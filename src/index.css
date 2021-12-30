@@ -2,28 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
-.custom-img {
-  background-image: url("https://images.unsplash.com/photo-1454496522488-7a8e488e8606?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1955&q=80");
-}
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
-.grabbable {
-  cursor: move; /* fallback if grab cursor is unsupported */
-  cursor: grab;
-  cursor: -moz-grab;
-  cursor: -webkit-grab;
-}
-
-/* (Optional) Apply a "closed-hand" cursor during drag operation. */
-.grabbable:active {
-  cursor: grabbing;
-  cursor: -moz-grabbing;
-  cursor: -webkit-grabbing;
 }
 
 ::-webkit-scrollbar {
@@ -49,7 +31,6 @@ body {
   font-family: "Patua One", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  scroll-behavior: smooth;
 }
 @media only screen and (max-width: 600px) {
   html,
@@ -64,11 +45,6 @@ button {
 
 main {
   font-family: "Open Sans", sans-serif;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
 }
 
 #c {
