@@ -43,20 +43,20 @@ function App() {
         outerScale={2}
       />
       <header>
-        {/* Imagem Mobile  */}
         <div className="flex flex-wrap pb-40 relative imagem-fundo">
-          <div className="lg:hidden max-w-screen-lg mx-auto pt-5 ">
-            <img
-              src={imagem}
-              className="mx-auto h-64 w-full shadow-indigo-600"
-              alt="imagem"
-              draggable="false"
-            ></img>
-          </div>
-
           {/* Principal */}
-          <div className="w-full xl:my-8 xl:px-8 xl:w-1/2">
-            <div className="lg:ml-24 m-2 items-center text-center lg:text-left justify-center mt-8 lg:mt-64 text-indigo-600 text-6xl ">
+          <div className=" xl:my-8 xl:px-8 xl:w-1/2">
+            <div className="lg:ml-24 m-2 items-center text-center xl:text-left xl:mt-64 justify-center mt-8 text-indigo-600 text-6xl ">
+              {/* Imagem Mobile  */}
+              <div className=" mx-auto xl:hidden pb-4">
+                <img
+                  src={imagem}
+                  className="mx-auto h-60 shadow-indigo-600"
+                  alt="imagem"
+                  draggable="false"
+                ></img>
+              </div>
+
               <TypingEffect />
               <Description />
               <div className="space-x-4">
@@ -84,13 +84,27 @@ function App() {
           </div>
 
           {/* Imagem Desktop */}
-          <div className="w-full lg:inline hidden xl:my-8 xl:px-8 xl:w-1/2">
+          <div className="w-full xl:my-8 xl:px-8 xl:w-1/2">
             <img
               src={imagem}
               alt="imagem"
               draggable="false"
-              className=" lg:ml-24 items-center text-center float-left justify-center lg:mt-0 xl:mt-44 text-indigo-600 text-6xl "
+              className="lg:ml-24 md:hidden hidden xl:hidden items-center text-center float-left justify-center lg:mt-0 xl:mt-44 text-indigo-600 text-6xl "
             ></img>
+
+            {/* <img
+              src={imagem}
+              alt="imagem"
+              draggable="false"
+              className="lg:ml-24 lg:inline hidden items-center text-center float-left justify-center lg:mt-0 xl:mt-44 text-indigo-600 text-6xl "
+            ></img> */}
+            <ul class="mx-auto ag-glitch_list md:hidden hidden xl:inline">
+              <li class="ag-glitch_item"></li>
+              <li class="ag-glitch_item"></li>
+              <li class="ag-glitch_item"></li>
+              <li class="ag-glitch_item"></li>
+              <li class="ag-glitch_item"></li>
+            </ul>
           </div>
         </div>
       </header>
@@ -101,8 +115,7 @@ function App() {
           <span class="animate-ping absolute inline-flex h-screen w-full rounded-full bg-purple-400 opacity-75"></span>
           <span class="relative inline-flex rounded-full h-3 w-3 bg-purple-500"></span>
         </span> */}
-      <section className="text-white text-center justify-items-center">
-        {/* <div class="-mb-1 imagem-fundo">
+      {/* <div class="-mb-1 imagem-fundo">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
             <path
               fill="#4F46E5"
@@ -111,6 +124,7 @@ function App() {
             ></path>
           </svg>
         </div> */}
+      <section className="text-white text-center self-center items-center mx-auto justify-center">
         <section id="wave" class="relative">
           <div class="wave wave1"></div>
           <div class="wave wave2"></div>
@@ -118,11 +132,11 @@ function App() {
           <div class=" wave wave4"></div>
         </section>
         <div class="bg-indigo-600">
-          <h1 className="text-5xl pt-12 box-shadow-3d shadow-indigo-500">
+          <h1 className="text-5xl pt-12 box-shadow-3d  shadow-indigo-500">
             Conhecimentos
           </h1>
           <blockquote>
-            <p className="mx-auto lg:w-5/12 text-lg pt-8 pb-4 -mb-1 box-shadow-3d-minus">
+            <p className="pt-8 pb-4 -mb-1  box-shadow-3d-minus">
               "A única maneira de fazer um grande trabalho é amando o que se
               faz." <br></br>- Steve Jobs
             </p>
@@ -136,7 +150,7 @@ function App() {
             </Icon>
             <MainText>Front-end</MainText>
             <SubText>
-              Atualmente, eu tenho um foco maior por Front-end e amo utilizar
+              Atualmente, eu tenho um maior foco por Front-end e amo utilizar
               React.js junto com Tailwind CSS
             </SubText>
           </Card>

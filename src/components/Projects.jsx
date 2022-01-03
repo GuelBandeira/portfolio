@@ -47,12 +47,11 @@ const Projects = () => {
               ETPC E-SPORTS
             </h1>
             <p className="text-justify font-thin max-w-xl pt-9 pr-9 pl-9 lg:p-0">
-              O site ETPC E-SPORTS faz parte da uma iniciativa de mesmo nome,
-              criada por mim e meus amigos com o intuito de levar o âmbito dos
-              esportes eletrônicos para a escola técnica. Desse modo, realizamos
-              uma parceria com a Fundação CSN para a divulgação, e criamos um
-              site do completo zero. Desempenhei as seguintes funções no
-              projeto:
+              O site ETPC E-SPORTS faz parte da iniciativa de mesmo nome, criada
+              por mim e meus amigos com o intuito de levar o âmbito dos esportes
+              eletrônicos para a escola técnica. Desse modo, realizamos uma
+              parceria com a Fundação CSN para a divulgação, e criamos um site
+              do completo zero. Desempenhei as seguintes funções no projeto:
               <br></br>
               <span className="p-4 justify-items-start font-thin max-w-lg self-center">
                 <IconProjects>
@@ -93,7 +92,7 @@ const Projects = () => {
                 href="https://esportsetpcvr.com.br/"
               >
                 <button className="hover:shadow-2xl text-black hover:shadow-black bg-white rounded-xl text-lg p-3 transform duration-300 ease-in hover:text-white hover:bg-black  ">
-                  <RiShareBoxFill className="inline-flex mb-1 font-bold" />{" "}
+                  <RiShareBoxFill className="inline-flex mb-1 font-bold" />
                   Acessar Site
                 </button>
               </a>
