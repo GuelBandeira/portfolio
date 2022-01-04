@@ -24,6 +24,7 @@ import Icon from "./components/Card/Icon";
 import SubText from "./components/Card/SubText";
 import Card from "./components/Card/Card";
 import ContainerCard from "./components/Card/ContainerCard";
+import "animate.css";
 
 function App() {
   return (
@@ -131,8 +132,9 @@ function App() {
           <div class=" wave wave3"></div>
           <div class=" wave wave4"></div>
         </section>
+
         <div class="bg-indigo-600">
-          <h1 className="text-5xl pt-12 box-shadow-3d  shadow-indigo-500">
+          <h1 className="text-5xl pt-12 box-shadow-3d animate__animated animate__fadeInDown shadow-indigo-500">
             Conhecimentos
           </h1>
           <blockquote>
