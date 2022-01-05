@@ -16,7 +16,6 @@ import etpcMobile from "../images/etpc-mobile.png";
 import Card from "./Card/Card";
 import IconProjects from "./Projetos/IconProjects";
 import Video from "./Projetos/Video";
-
 const Projects = () => {
   return (
     <>

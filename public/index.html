@@ -182,7 +182,7 @@
     <noscript>You need to enable JavaScript to run this app.</noscript>
 
     <div id="root">
-      <div class="ipl-progress-indicator" id="ipl-progress-indicator">
+      <!-- <div class="ipl-progress-indicator" id="ipl-progress-indicator">
         <div class="ipl-progress-indicator-head">
           <div class="first-indicator"></div>
           <div class="second-indicator"></div>
@@ -204,7 +204,7 @@
             </g>
           </svg>
         </div>
-      </div>
+      </div> -->
     </div>
 
     <!--
@@ -218,4 +218,17 @@
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
   </body>
+  <script type="text/javascript">
+    document.addEventListener("mousemove", parallax);
+    function parallax(e) {
+      document.querySelectorAll(".object").forEach(function (move) {
+        var moving_value = move.getAttribute("data-value");
+        var x = (e.clientX * moving_value) / 250;
+        var y = (e.clientY * moving_value) / 250;
+
+        move.style.transform =
+          "translateX(" + x + "px) translateY(" + y + "px)";
+      });
+    }
+  </script>
 </html>

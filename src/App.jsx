@@ -9,9 +9,10 @@ import {
   FaReact,
   FaCode,
   FaPalette,
+  FaGithub,
 } from "react-icons/fa";
 import Button from "./components/Button";
-import imagem from "../src/images/test.png"; // with import
+import imagem from "../src/images/guel.png"; // with import
 import Projects from "./components/Projects";
 import CustomScroll from "react-custom-scroll";
 import { fadeInUp } from "react-animations";
@@ -25,6 +26,10 @@ import SubText from "./components/Card/SubText";
 import Card from "./components/Card/Card";
 import ContainerCard from "./components/Card/ContainerCard";
 import "animate.css";
+import { SiGmail } from "react-icons/si";
+import { AiOutlineMail } from "react-icons/ai";
+import { googleGmail } from "@iconify/react";
+import logo from "../src/images/gmail.png";
 
 function App() {
   return (
@@ -138,7 +143,7 @@ function App() {
             Conhecimentos
           </h1>
           <blockquote>
-            <p className="pt-8 pb-4 -mb-1  box-shadow-3d-minus">
+            <p className="pt-8 pb-4 -mb-1 box-shadow-3d-minus">
               "A única maneira de fazer um grande trabalho é amando o que se
               faz." <br></br>- Steve Jobs
             </p>
@@ -200,13 +205,56 @@ function App() {
             ></path>
           </svg>
         </div> */}
-        <section id="wave" class="relative -mb-1">
-          <div class="wave wave1"></div>
-          <div class="wave wave2"></div>
-          <div class=" wave wave3"></div>
-          <div class=" wave wave4"></div>
-        </section>
-        <h1 className="text-2xl text-white text-center pt-12 box-shadow-3d shadow-indigo-500">
+        <div class="imagem-fundo -pt-40">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path
+              fill="#4F46E5"
+              fill-opacity="1"
+              d="M0,288L1440,128L1440,320L0,320Z"
+            ></path>
+          </svg>
+        </div>
+        <h1 className="text-5xl text-white text-center pt-12 box-shadow-3d shadow-indigo-500">
+          Contato
+        </h1>
+        {/* BOTOES */}
+        <div className="space-y-3">
+          <div className="block">
+            <button className="inline-flex rounded-full border-2 transition-all ease-in duration-300 p-1 items-center text-center hover:white text-gray-900 hover:text-white hover:border-green-400 hover:shadow-green-500 hover:shadow-xl border-gray-900 text-4xl bg-transparent hover:bg-green-500">
+              <FaWhatsapp className="p-1 inline-flex" />
+            </button>
+            <span className="text-md pl-2 text-white text-center box-shadow-3d-minus">
+              (24) 99998-7722
+            </span>
+          </div>
+          <div className="block">
+            <button className="inline-flex rounded-full border-2 transition-all ease-in duration-200 p-1 items-center text-center text-red-500 hover:text-white hover:shadow-red-500 hover:shadow-xl border-red-500 text-4xl bg-transparent hover:bg-red-500">
+              <img src={logo} alt="" className="w-9 h-9 p-1" />
+            </button>
+            <span className="text-md pl-2 text-white box-shadow-3d-minus">
+              bandeiraguel@gmail.com
+            </span>
+          </div>
+
+          <div className="block">
+            <button className="inline-flex rounded-full border-2 transition-all ease-in duration-200 p-1 items-center text-center text-gray-900 hover:text-white hover:shadow-blue-500 hover:shadow-xl border-gray-900 hover:border-blue-400 text-4xl bg-transparent hover:bg-blue-500">
+              <FaLinkedin className="p-1" />
+            </button>
+            <span className="text-md pl-2 text-white box-shadow-3d-minus ">
+              José Miguel Bandeira de Novaes
+            </span>
+          </div>
+
+          <div className="block">
+            <button className="inline-flex rounded-full border-2 transition-all ease-in duration-300 p-1 items-center text-center hover:white text-gray-900 hover:text-white hover:border-gray-700 hover:shadow-gray-900 hover:shadow-xl border-gray-900 text-4xl bg-transparent hover:bg-gray-900">
+              <FaGithub className="p-1" />
+            </button>
+            <span className="text-md pl-2 text-white box-shadow-3d-minus">
+              GuelBandeira
+            </span>
+          </div>
+        </div>
+        <h1 className="text-2xl text-white text-center pt-12 box-shadow-3d-minus">
           Esse site foi criado com muito 💜,☕ &
           <FaReact className="inline-flex text-3xl ml-2 lg:mb-1 text-cyan-400 animate-spin" />
         </h1>
