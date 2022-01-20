@@ -2,7 +2,8 @@
   "short_name": "React App",
   "name": "Create React App Sample",
   "icons": [
-    "triangle.png"
+   {"src": "triangle.png",
+    "type": "image/png"}
   ],
   "start_url": ".",
   "display": "standalone",

@@ -349,6 +349,17 @@ function App() {
           </h1>
         </div>
       </main>
+      <div class="pk-loader">
+        <svg id="triangle" viewBox="-3 -4 39 39">
+          <polygon
+            fill="#050c1b"
+            stroke="#4f46e5"
+            strokeWidth="2.5"
+            points="16,0 32,32 0,32"
+          ></polygon>
+        </svg>
+        <div class="loader-text">Carregando...</div>
+      </div>
     </>
   );
 }
