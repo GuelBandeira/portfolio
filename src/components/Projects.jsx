@@ -20,7 +20,7 @@ const Projects = () => {
   return (
     <>
       {/* PROJETOS */}
-      <main className="imagem-fundo pb-32 pt-40 ">
+      <main className="imagem-fundo pt-48 lg:-mb-28">
         {/* HEADER */}
         <h1
           className="text-white text-center text-6xl"
@@ -42,15 +42,16 @@ const Projects = () => {
             linkVideo={"https://www.youtube.com/embed/tgbNymZ7vqY"}
           ></Video>
           <div className="w-full bg-indigo-600 shadow-indigo-900 shadow-2xl rounded-lg -mt-24 flex space-y-5 flex-col justify-center items-center">
-            <h1 className=" text-center text-3xl font-bold pt-32">
+            <h1 className=" text-center text-3xl font-bold pt-32 font">
               ETPC E-SPORTS
             </h1>
-            <p className="text-justify font-thin max-w-xl pt-9 pr-9 pl-9 lg:p-0">
+            <p className="text-justify font-thin max-w-xl pt-9 pr-9 pl-9 lg:p-0 font">
               O site ETPC E-SPORTS faz parte da iniciativa de mesmo nome, criada
               por mim e meus amigos com o intuito de levar o âmbito dos esportes
-              eletrônicos para a escola técnica. Desse modo, realizamos uma
-              parceria com a Fundação CSN para a divulgação, e criamos um site
-              do completo zero. Desempenhei as seguintes funções no projeto:
+              eletrônicos para a Escola Técnica Pandiá Calógeras. Desse modo,
+              realizamos uma parceria com a Fundação CSN para a divulgação, e
+              criamos um site do completo zero. Desempenhei as seguintes funções
+              no projeto:
               <br></br>
               <span className="p-4 justify-items-start font-thin max-w-lg self-center">
                 <IconProjects>
@@ -90,8 +91,8 @@ const Projects = () => {
                 rel="noopener noreferrer"
                 href="https://esportsetpcvr.com.br/"
               >
-                <button className="hover:shadow-2xl text-black hover:shadow-black bg-white rounded-xl text-lg p-3 transform duration-300 ease-in hover:text-white hover:bg-black  ">
-                  <RiShareBoxFill className="inline-flex mb-1 font-bold" />
+                <button className="item3 button hover:shadow-2xl text-indigo-600 hover:shadow-black bg-white rounded-xl text-lg p-3 relative  justify-center overflow-hidden duration-1000 transform ease-in-out hover:text-white  ">
+                  <RiShareBoxFill className="inline-flex mb-1 mr-1 font-bold" />
                   Acessar Site
                 </button>
               </a>

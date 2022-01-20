@@ -48,80 +48,83 @@ function App() {
         //Tamanho da bola externa hover
         outerScale={2}
       />
-      <header>
-        <div className="flex flex-wrap pb-40 relative imagem-fundo">
-          {/* Principal */}
-          <div className=" xl:my-8 xl:px-8 xl:w-1/2">
-            <div className="lg:ml-24 m-2 items-center text-center xl:text-left xl:mt-64 justify-center mt-8 text-indigo-600 text-6xl ">
-              {/* Imagem Mobile  */}
-              <div className=" mx-auto xl:hidden pb-4">
-                <img
-                  src={imagem}
-                  className="mx-auto h-60 shadow-indigo-600"
-                  alt="imagem"
-                  draggable="false"
-                ></img>
-              </div>
+      <main className="imagem-fundo">
+        <header>
+          <div className="flex flex-wrap pb-40 relative ">
+            {/* Principal */}
+            <div className=" xl:my-8 xl:px-8 xl:w-1/2">
+              <div className="lg:ml-24 m-2 items-center text-center xl:text-left xl:mt-64 justify-center mt-8 text-indigo-600 text-6xl ">
+                {/* Imagem Mobile  */}
+                <div className=" mx-auto xl:hidden pb-4">
+                  <img
+                    src={imagem}
+                    className="mx-auto h-60 shadow-indigo-600"
+                    alt="imagem"
+                    draggable="false"
+                  ></img>
+                </div>
 
-              <TypingEffect />
-              <Description />
-              <div className="space-x-4">
-                <a
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  href="https://api.whatsapp.com/send?  phone=5524999987722&text=Oi%2C%20tudo%20bem%3F"
-                >
-                  <Button>
-                    <FaWhatsapp className="inline-flex mb-1 text-xl" /> Whatsapp
-                  </Button>
-                </a>
+                <TypingEffect />
+                <Description />
+                <div className="space-x-4">
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://api.whatsapp.com/send?phone=5524999987722&text=Oi%2C%20tudo%20bem%3F"
+                  >
+                    <Button>
+                      <FaWhatsapp className="inline-flex mb-1 text-xl" />{" "}
+                      Whatsapp
+                    </Button>
+                  </a>
 
-                <a
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  href="https://www.linkedin.com/in/jos%C3%A9-miguel-bandeira-de-novaes-09b1b91a2/"
-                >
-                  <Button>
-                    <FaLinkedin className="inline-flex mb-1 text-xl" /> Linkedin
-                  </Button>
-                </a>
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://www.linkedin.com/in/guel-bandeira/"
+                  >
+                    <Button>
+                      <FaLinkedin className="inline-flex mb-1 text-xl" />{" "}
+                      Linkedin
+                    </Button>
+                  </a>
+                </div>
               </div>
             </div>
-          </div>
 
-          {/* Imagem Desktop */}
-          <div className="w-full xl:my-8 xl:px-8 xl:w-1/2">
-            <img
-              src={imagem}
-              alt="imagem"
-              draggable="false"
-              className="lg:ml-24 md:hidden hidden xl:hidden items-center text-center float-left justify-center lg:mt-0 xl:mt-44 text-indigo-600 text-6xl "
-            ></img>
+            {/* Imagem Desktop */}
+            <div className="w-full xl:my-8 xl:px-8 xl:w-1/2">
+              <img
+                src={imagem}
+                alt="imagem"
+                draggable="false"
+                className="lg:ml-24 md:hidden hidden xl:hidden items-center text-center float-left justify-center lg:mt-0 xl:mt-44 text-indigo-600 text-6xl "
+              ></img>
 
-            {/* <img
+              {/* <img
               src={imagem}
               alt="imagem"
               draggable="false"
               className="lg:ml-24 lg:inline hidden items-center text-center float-left justify-center lg:mt-0 xl:mt-44 text-indigo-600 text-6xl "
             ></img> */}
-            <ul class="mx-auto ag-glitch_list md:hidden hidden xl:inline">
-              <li class="ag-glitch_item"></li>
-              <li class="ag-glitch_item"></li>
-              <li class="ag-glitch_item"></li>
-              <li class="ag-glitch_item"></li>
-              <li class="ag-glitch_item"></li>
-            </ul>
+              <ul class="mx-auto ag-glitch_list md:hidden hidden xl:inline">
+                <li class="ag-glitch_item"></li>
+                <li class="ag-glitch_item"></li>
+                <li class="ag-glitch_item"></li>
+                <li class="ag-glitch_item"></li>
+                <li class="ag-glitch_item"></li>
+              </ul>
+            </div>
           </div>
-        </div>
-      </header>
-      {/*
+        </header>
+        {/*
          COOL ANIMATION
   
          <span class="flex h-3 w-3">
           <span class="animate-ping absolute inline-flex h-screen w-full rounded-full bg-purple-400 opacity-75"></span>
           <span class="relative inline-flex rounded-full h-3 w-3 bg-purple-500"></span>
         </span> */}
-      {/* <div class="-mb-1 imagem-fundo">
+        {/* <div class="-mb-1 ">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
             <path
               fill="#4F46E5"
@@ -130,73 +133,72 @@ function App() {
             ></path>
           </svg>
         </div> */}
-      <section className="text-white text-center self-center items-center mx-auto justify-center">
-        <section id="wave" class="relative">
+        <section className="text-white text-center self-center items-center mx-auto justify-center">
+          <section id="wave" class="relative">
+            <div class="wave wave1"></div>
+            <div class="wave wave2"></div>
+            <div class=" wave wave3"></div>
+            <div class=" wave wave4"></div>
+          </section>
+
+          <div class="bg-indigo-600">
+            <h1 className="text-5xl pt-12 box-shadow-3d animate__animated animate__fadeInDown shadow-indigo-500">
+              Conhecimentos
+            </h1>
+            <blockquote>
+              <p className="pt-8 pb-4 px-4 -mb-1 box-shadow-3d-minus">
+                "A única maneira de fazer um grande trabalho é amando o que se
+                faz." <br></br>- Steve Jobs
+              </p>
+            </blockquote>
+          </div>
+
+          <ContainerCard>
+            <Card>
+              <Icon>
+                <FaCode />
+              </Icon>
+              <MainText>Front-end</MainText>
+              <SubText>
+                Atualmente, eu tenho um maior foco por Front-end e amo utilizar
+                React.js junto com Tailwind CSS
+              </SubText>
+            </Card>
+            <Card>
+              <Icon>
+                <BiCodeBlock />
+              </Icon>
+              <MainText>Back-end</MainText>
+              <SubText>
+                Um bom Front-end precisa de um bom Back-end, é o equilibrio para
+                criar um ótimo produto.
+              </SubText>
+            </Card>
+
+            <Card>
+              <Icon>
+                <IoIosColorPalette />
+              </Icon>
+              <MainText>Criatividade</MainText>
+              <SubText>
+                Sempre tento utilizar o máximo da minha criatividade no código &
+                design.
+              </SubText>
+            </Card>
+          </ContainerCard>
+          {/* <svg viewBox="0 0 1440 319" className="-mb-1" fill="">
+            <path d="M0,32L48,80C96,128,192,224,288,224C384,224,480,128,576,90.7C672,53,768,75,864,96C960,117,1056,139,1152,149.3C1248,160,1344,160,1392,160L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+          </svg> */}
+        </section>
+        <section id="wave" class="relative rotate-180">
           <div class="wave wave1"></div>
           <div class="wave wave2"></div>
           <div class=" wave wave3"></div>
           <div class=" wave wave4"></div>
         </section>
-
-        <div class="bg-indigo-600">
-          <h1 className="text-5xl pt-12 box-shadow-3d animate__animated animate__fadeInDown shadow-indigo-500">
-            Conhecimentos
-          </h1>
-          <blockquote>
-            <p className="pt-8 pb-4 -mb-1 box-shadow-3d-minus">
-              "A única maneira de fazer um grande trabalho é amando o que se
-              faz." <br></br>- Steve Jobs
-            </p>
-          </blockquote>
-        </div>
-
-        <ContainerCard>
-          <Card>
-            <Icon>
-              <FaCode />
-            </Icon>
-            <MainText>Front-end</MainText>
-            <SubText>
-              Atualmente, eu tenho um maior foco por Front-end e amo utilizar
-              React.js junto com Tailwind CSS
-            </SubText>
-          </Card>
-          <Card>
-            <Icon>
-              <BiCodeBlock />
-            </Icon>
-            <MainText>Back-end</MainText>
-            <SubText>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Repellendus, omnis! Dignissimos minima quo veritatis error?
-            </SubText>
-          </Card>
-
-          <Card>
-            <Icon>
-              <IoIosColorPalette />
-            </Icon>
-            <MainText>Criatividade</MainText>
-            <SubText>
-              Eu amo realizar código e criativo, pois eu crio o design & código,
-              assim tudo flui da melhor maneira
-            </SubText>
-          </Card>
-        </ContainerCard>
-        {/* <svg viewBox="0 0 1440 319" className="-mb-1" fill="">
-            <path d="M0,32L48,80C96,128,192,224,288,224C384,224,480,128,576,90.7C672,53,768,75,864,96C960,117,1056,139,1152,149.3C1248,160,1344,160,1392,160L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
-          </svg> */}
-      </section>
-      <section id="wave" class="relative rotate-180">
-        <div class="wave wave1"></div>
-        <div class="wave wave2"></div>
-        <div class=" wave wave3"></div>
-        <div class=" wave wave4"></div>
-      </section>
-      <Projects />
-      <footer className="bg-indigo-600 pb-2">
+        <Projects />
         {/* WAVE ESTATICA */}
-        {/* <div class="imagem-fundo">
+        {/* <div class="">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
             <path
               fill="#4F46E5"
@@ -205,7 +207,7 @@ function App() {
             ></path>
           </svg>
         </div> */}
-        <div class="imagem-fundo -pt-40">
+        <div class="-pt-40">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
             <path
               fill="#4F46E5"
@@ -214,51 +216,139 @@ function App() {
             ></path>
           </svg>
         </div>
-        <h1 className="text-5xl text-white text-center pt-12 box-shadow-3d shadow-indigo-500">
-          Contato
+
+        <footer class="bg-indigo-600 text-left">
+          <div class="grid md:grid-cols-1 p-12">
+            {/* SECAO SOBRE */}
+            <div>
+              <h1 className="text-5xl text-white text-left pt-12 box-shadow-3d shadow-indigo-500">
+                Sobre
+              </h1>
+              <p className="text-white text-justify pt-4 font md:w-10/12">
+                Olá, eu me chamo José Miguel, mas prefiro ser chamado de Guel.
+                Comecei a programar quando tinha 15 anos, consequentemente fui
+                me apaixonando cada vez mais por esse mundo. Comecei a
+                desenvolver sites por hobby, e foi onde encontrei minha vocação
+                como FullStack, desde então venho sempre buscando aprimorar
+                minhas habilidades, além de aprender e me adaptar á novas
+                tecnologias do mercado.
+              </p>
+            </div>
+            {/* SECAO CONTATO */}
+            <div className="md:col-end-6">
+              <h1 className="text-5xl pb-6 text-white pt-12 box-shadow-3d shadow-indigo-500">
+                Contato
+              </h1>
+
+              <div className="space-y-3">
+                <div className="block">
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://api.whatsapp.com/send?phone=5524999987722&text=Oi%2C%20tudo%20bem%3F"
+                  >
+                    <button
+                      id="whatsapp"
+                      className="inline-flex rounded-full border-2 transition-all ease-in duration-300 p-1 items-center text-center text-gray-900 hover:text-white hover:border-green-400 hover:shadow-green-500 hover:shadow-xl border-white text-4xl bg-transparent hover:bg-green-500"
+                    >
+                      <FaWhatsapp className="p-1 text-white inline-flex" />
+                    </button>
+                    <label
+                      htmlFor="whatsapp"
+                      className="text-md pb-10 pl-2 text-white text-center box-shadow-3d-minus"
+                    >
+                      (24) 99998-7722
+                    </label>
+                  </a>
+                </div>
+                <div className="block">
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="mailto:bandeiraguel@gmail.com"
+                  >
+                    <button
+                      id="email"
+                      className="inline-flex rounded-full border-2 transition-all ease-in duration-200 p-1 items-center text-center text-white hover:shadow-red-500 hover:shadow-xl border-white text-4xl bg-transparent hover:bg-red-500 hover:border-red-400"
+                    >
+                      <AiOutlineMail className="p-1 text-white inline-flex" />
+                    </button>
+                    <label
+                      htmlFor="email"
+                      className="text-md pl-2 text-white box-shadow-3d-minus"
+                    >
+                      bandeiraguel@gmail.com
+                    </label>
+                  </a>
+                </div>
+
+                <div className="block">
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://www.linkedin.com/in/guel-bandeira/"
+                  >
+                    <button
+                      id="linkedin"
+                      className="inline-flex rounded-full border-2 transition-all ease-in duration-200 p-1 items-center text-center text-white hover:shadow-blue-500 hover:shadow-xl border-white hover:border-blue-400 text-4xl bg-transparent hover:bg-blue-500"
+                    >
+                      <FaLinkedin className="p-1" />
+                    </button>
+                    <label
+                      htmlFor="linkedin"
+                      className="text-md pl-2 text-white box-shadow-3d-minus "
+                    >
+                      Guel Bandeira
+                    </label>
+                  </a>
+                </div>
+
+                <div className="block">
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://github.com/GuelBandeira"
+                  >
+                    <button
+                      id="github"
+                      className="inline-flex rounded-full border-2 transition-all ease-in duration-300 p-1 items-center text-center text-white hover:border-gray-700 hover:shadow-gray-900 hover:shadow-xl border-white text-4xl bg-transparent hover:bg-gray-900"
+                    >
+                      <FaGithub className="p-1" />
+                    </button>
+                    <label
+                      htmlFor="github"
+                      className="text-md pl-2 text-white box-shadow-3d-minus"
+                    >
+                      GuelBandeira
+                    </label>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </footer>
+        {/* <div className="w-full bg-indigo-600 -mt-10">
+          <section className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-4 py-12">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {children}
+            </div>
+          </section>
+        </div> */}
+        <h1 className="text-lg text-white text-center p-4 bg-indigo-700">
+          Esse site foi criado com muito 💜 & ☕
         </h1>
-        {/* BOTOES */}
-        <div className="space-y-3">
-          <div className="block">
-            <button className="inline-flex rounded-full border-2 transition-all ease-in duration-300 p-1 items-center text-center hover:white text-gray-900 hover:text-white hover:border-green-400 hover:shadow-green-500 hover:shadow-xl border-gray-900 text-4xl bg-transparent hover:bg-green-500">
-              <FaWhatsapp className="p-1 inline-flex" />
-            </button>
-            <span className="text-md pl-2 text-white text-center box-shadow-3d-minus">
-              (24) 99998-7722
-            </span>
-          </div>
-          <div className="block">
-            <button className="inline-flex rounded-full border-2 transition-all ease-in duration-200 p-1 items-center text-center text-red-500 hover:text-white hover:shadow-red-500 hover:shadow-xl border-red-500 text-4xl bg-transparent hover:bg-red-500">
-              <img src={logo} alt="" className="w-9 h-9 p-1" />
-            </button>
-            <span className="text-md pl-2 text-white box-shadow-3d-minus">
-              bandeiraguel@gmail.com
-            </span>
-          </div>
-
-          <div className="block">
-            <button className="inline-flex rounded-full border-2 transition-all ease-in duration-200 p-1 items-center text-center text-gray-900 hover:text-white hover:shadow-blue-500 hover:shadow-xl border-gray-900 hover:border-blue-400 text-4xl bg-transparent hover:bg-blue-500">
-              <FaLinkedin className="p-1" />
-            </button>
-            <span className="text-md pl-2 text-white box-shadow-3d-minus ">
-              José Miguel Bandeira de Novaes
-            </span>
-          </div>
-
-          <div className="block">
-            <button className="inline-flex rounded-full border-2 transition-all ease-in duration-300 p-1 items-center text-center hover:white text-gray-900 hover:text-white hover:border-gray-700 hover:shadow-gray-900 hover:shadow-xl border-gray-900 text-4xl bg-transparent hover:bg-gray-900">
-              <FaGithub className="p-1" />
-            </button>
-            <span className="text-md pl-2 text-white box-shadow-3d-minus">
-              GuelBandeira
-            </span>
-          </div>
+        <div className="bg-indigo-700">
+          <button
+            id="github"
+            className="rounded-full border-2 transition-all ease-in duration-300 p-1 items-center text-center text-white hover:border-gray-700 hover:shadow-gray-900 hover:shadow-xl border-white text-4xl bg-transparent hover:bg-gray-900"
+          >
+            <FaGithub className="p-1" />
+          </button>
+          <h1 className="text-md pl-2 text-white box-shadow-3d-minus inline-flex">
+            GuelBandeira
+          </h1>
         </div>
-        <h1 className="text-2xl text-white text-center pt-12 box-shadow-3d-minus">
-          Esse site foi criado com muito 💜,☕ &
-          <FaReact className="inline-flex text-3xl ml-2 lg:mb-1 text-cyan-400 animate-spin" />
-        </h1>
-      </footer>
+      </main>
     </>
   );
 }

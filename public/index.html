@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
+    <link rel="icon" href="../src/images/triangle.png">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -35,7 +36,7 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>React App</title>
+    <title>Portfolio - Guel Bandeira</title>
     <style>
       .ipl-progress-indicator.available {
         opacity: 0;
@@ -218,17 +219,5 @@
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
   </body>
-  <script type="text/javascript">
-    document.addEventListener("mousemove", parallax);
-    function parallax(e) {
-      document.querySelectorAll(".object").forEach(function (move) {
-        var moving_value = move.getAttribute("data-value");
-        var x = (e.clientX * moving_value) / 250;
-        var y = (e.clientY * moving_value) / 250;
-
-        move.style.transform =
-          "translateX(" + x + "px) translateY(" + y + "px)";
-      });
-    }
-  </script>
+ 
 </html>
