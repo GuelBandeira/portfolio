@@ -1,22 +1,11 @@
 import React from "react";
 import "./App.css";
-import Background from "./components/Background";
 import Description from "./components/Description";
 import TypingEffect from "./components/TypingEffect";
-import {
-  FaLinkedin,
-  FaWhatsapp,
-  FaReact,
-  FaCode,
-  FaPalette,
-  FaGithub,
-} from "react-icons/fa";
+import { FaLinkedin, FaWhatsapp, FaCode, FaGithub } from "react-icons/fa";
 import Button from "./components/Button";
 import imagem from "../src/images/guel.png"; // with import
 import Projects from "./components/Projects";
-import CustomScroll from "react-custom-scroll";
-import { fadeInUp } from "react-animations";
-import Radium, { StyleRoot } from "radium";
 import AnimatedCursor from "react-animated-cursor";
 import { BiCodeBlock } from "react-icons/bi";
 import { IoIosColorPalette } from "react-icons/io";
@@ -26,10 +15,7 @@ import SubText from "./components/Card/SubText";
 import Card from "./components/Card/Card";
 import ContainerCard from "./components/Card/ContainerCard";
 import "animate.css";
-import { SiGmail } from "react-icons/si";
 import { AiOutlineMail } from "react-icons/ai";
-import { googleGmail } from "@iconify/react";
-import logo from "../src/images/gmail.png";
 import AOS from "aos";
 import "aos/dist/aos.css"; // You can also use <link> for styles
 AOS.init();
