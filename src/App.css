@@ -5,7 +5,9 @@
   -o-background-size: cover;
   background-size: cover;
 }
-
+.border-outset {
+  border-style: outset;
+}
 section .wave {
   position: absolute;
   bottom: 0;

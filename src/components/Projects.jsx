@@ -39,13 +39,19 @@ const Projects = () => {
 
         <section className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-4 py-12 text-white">
           <Video
-            linkVideo={"https://www.youtube.com/embed/tgbNymZ7vqY"}
+            linkVideo={"https://www.youtube.com/embed/LhSDtX5HCHQ"}
           ></Video>
           <div className="w-full bg-indigo-600 shadow-indigo-900 shadow-2xl rounded-lg -mt-24 flex space-y-5 flex-col justify-center items-center">
-            <h1 className=" text-center text-3xl font-bold pt-32 font">
+            <h1
+              className=" text-center text-3xl font-bold pt-32 font"
+              data-aos="flip-left"
+            >
               ETPC E-SPORTS
             </h1>
-            <p className="text-justify font-thin max-w-xl pt-9 pr-9 pl-9 lg:p-0 font">
+            <p
+              className="text-justify font-thin max-w-xl pt-9 pr-9 pl-9 lg:p-0 font"
+              data-aos="fade-zoom-in"
+            >
               O site ETPC E-SPORTS faz parte da iniciativa de mesmo nome, criada
               por mim e meus amigos com o intuito de levar o âmbito dos esportes
               eletrônicos para a Escola Técnica Pandiá Calógeras. Desse modo,

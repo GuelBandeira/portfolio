@@ -30,7 +30,9 @@ import { SiGmail } from "react-icons/si";
 import { AiOutlineMail } from "react-icons/ai";
 import { googleGmail } from "@iconify/react";
 import logo from "../src/images/gmail.png";
-
+import AOS from "aos";
+import "aos/dist/aos.css"; // You can also use <link> for styles
+AOS.init();
 function App() {
   return (
     <>
@@ -55,7 +57,7 @@ function App() {
             <div className=" xl:my-8 xl:px-8 xl:w-1/2">
               <div className="lg:ml-24 m-2 items-center text-center xl:text-left xl:mt-64 justify-center mt-8 text-indigo-600 text-6xl ">
                 {/* Imagem Mobile  */}
-                <div className=" mx-auto xl:hidden pb-4">
+                <div className=" mx-auto xl:hidden pb-4 ">
                   <img
                     src={imagem}
                     className="mx-auto h-60 shadow-indigo-600"
@@ -66,6 +68,7 @@ function App() {
 
                 <TypingEffect />
                 <Description />
+
                 <div className="space-x-4">
                   <a
                     target="_blank"
@@ -142,7 +145,10 @@ function App() {
           </section>
 
           <div class="bg-indigo-600">
-            <h1 className="text-5xl pt-12 box-shadow-3d animate__animated animate__fadeInDown shadow-indigo-500">
+            <h1
+              data-aos="fade-up"
+              className="text-5xl pt-12 box-shadow-3d shadow-indigo-500"
+            >
               Conhecimentos
             </h1>
             <blockquote>
@@ -224,7 +230,10 @@ function App() {
               <h1 className="text-5xl text-white text-left pt-12 box-shadow-3d shadow-indigo-500">
                 Sobre
               </h1>
-              <p className="text-white text-justify pt-4 font md:w-10/12">
+              <p
+                className="text-white text-justify pt-4 font md:w-10/12"
+                data-aos="fade-right"
+              >
                 Olá, eu me chamo José Miguel, mas prefiro ser chamado de Guel.
                 Comecei a programar quando tinha 15 anos, consequentemente fui
                 me apaixonando cada vez mais por esse mundo. Comecei a
@@ -240,7 +249,7 @@ function App() {
                 Contato
               </h1>
 
-              <div className="space-y-3">
+              <div className="space-y-3" data-aos="fade-left">
                 <div className="block">
                   <a
                     target="_blank"
@@ -337,16 +346,18 @@ function App() {
         <h1 className="text-lg text-white text-center p-4 bg-indigo-700">
           Esse site foi criado com muito 💜 & ☕
         </h1>
-        <div className="bg-indigo-700">
-          <button
-            id="github"
-            className="rounded-full border-2 transition-all ease-in duration-300 p-1 items-center text-center text-white hover:border-gray-700 hover:shadow-gray-900 hover:shadow-xl border-white text-4xl bg-transparent hover:bg-gray-900"
-          >
-            <FaGithub className="p-1" />
-          </button>
-          <h1 className="text-md pl-2 text-white box-shadow-3d-minus inline-flex">
-            GuelBandeira
-          </h1>
+        <div className="bg-indigo-700 ">
+          <div className="text-center items-center self-center justify-center justify-self-center">
+            <button
+              id="github"
+              className="rounded-full border-2 transition-all ease-in duration-300 p-1 items-center text-center text-white hover:border-gray-700 hover:shadow-gray-900 hover:shadow-xl border-white text-4xl bg-transparent hover:bg-gray-900"
+            >
+              <FaGithub className="p-1" />
+            </button>
+            <span className="-pt-20 text-md pl-2  text-white box-shadow-3d-minus inline-flex">
+              GuelBandeira
+            </span>
+          </div>
         </div>
       </main>
       <div class="pk-loader">

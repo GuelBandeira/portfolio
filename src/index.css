@@ -41,17 +41,14 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-@media only screen and (max-width: 600px) {
-  html,
-  body {
-    overflow-x: hidden;
-  }
+html,
+body {
+  overflow-x: hidden;
 }
 
 button {
   font-family: "Patua One", sans-serif;
 }
-
 
 #c {
   /*background: URl('https://i.pinimg.com/originals/4a/94/26/4a94268541d7a0ed95a8be5138e8a288.jpg');*/
