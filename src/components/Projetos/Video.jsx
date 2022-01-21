@@ -7,7 +7,7 @@ const Video = ({ linkVideo }) => {
         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
         data-aos="fade-up"
         allowFullScreen
-        className=" rounded-2xl border-4 border-y-indigo-900 border-x-indigo-700"
+        className=" rounded-2xl border-4 border-indigo-600"
         src={linkVideo}
       ></iframe>
     </div>

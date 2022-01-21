@@ -256,15 +256,10 @@ function App() {
                     rel="noopener noreferrer"
                     href="https://api.whatsapp.com/send?phone=5524999987722&text=Oi%2C%20tudo%20bem%3F"
                   >
-                    <button
-                      id="whatsapp"
-                      className="inline-flex rounded-full border-2 transition-all ease-in duration-300 p-1 items-center text-center text-gray-900 hover:text-white hover:border-green-400 hover:shadow-green-500 hover:shadow-xl border-white text-4xl bg-transparent hover:bg-green-500"
-                    >
-                      <FaWhatsapp className="p-1 text-white inline-flex" />
-                    </button>
+                    <FaWhatsapp className=" rounded-full border-2 transition-all ease-in duration-300 p-2 items-center text-center text-white hover:border-green-400 hover:shadow-green-500 hover:shadow-xl border-white text-5xl bg-transparent hover:bg-green-500 inline-flex" />
                     <label
                       htmlFor="whatsapp"
-                      className="text-md pb-10 pl-2 text-white text-center box-shadow-3d-minus"
+                      className="text-md pl-2 text-white text-center box-shadow-3d-minus"
                     >
                       (24) 99998-7722
                     </label>
@@ -276,12 +271,7 @@ function App() {
                     rel="noopener noreferrer"
                     href="mailto:bandeiraguel@gmail.com"
                   >
-                    <button
-                      id="email"
-                      className="inline-flex rounded-full border-2 transition-all ease-in duration-200 p-1 items-center text-center text-white hover:shadow-red-500 hover:shadow-xl border-white text-4xl bg-transparent hover:bg-red-500 hover:border-red-400"
-                    >
-                      <AiOutlineMail className="p-1 text-white inline-flex" />
-                    </button>
+                    <AiOutlineMail className="inline-flex p-2 rounded-full border-2 transition-all ease-in duration-200 items-center text-center text-white hover:shadow-red-500 hover:shadow-xl border-white text-5xl bg-transparent hover:bg-red-500 hover:border-red-400" />
                     <label
                       htmlFor="email"
                       className="text-md pl-2 text-white box-shadow-3d-minus"
@@ -297,11 +287,8 @@ function App() {
                     rel="noopener noreferrer"
                     href="https://www.linkedin.com/in/guel-bandeira/"
                   >
-                    <button
-                      id="linkedin"
-                      className="inline-flex rounded-full border-2 transition-all ease-in duration-200 p-1 items-center text-center text-white hover:shadow-blue-500 hover:shadow-xl border-white hover:border-blue-400 text-4xl bg-transparent hover:bg-blue-500"
-                    >
-                      <FaLinkedin className="p-1" />
+                    <button id="linkedin">
+                      <FaLinkedin className="p-2 inline-flex rounded-full border-2 transition-all ease-in duration-200 items-center text-center text-white hover:shadow-blue-500 hover:shadow-xl border-white hover:border-blue-400 text-5xl bg-transparent hover:bg-blue-500" />
                     </button>
                     <label
                       htmlFor="linkedin"
@@ -318,12 +305,10 @@ function App() {
                     rel="noopener noreferrer"
                     href="https://github.com/GuelBandeira"
                   >
-                    <button
+                    <FaGithub
                       id="github"
-                      className="inline-flex rounded-full border-2 transition-all ease-in duration-300 p-1 items-center text-center text-white hover:border-gray-700 hover:shadow-gray-900 hover:shadow-xl border-white text-4xl bg-transparent hover:bg-gray-900"
-                    >
-                      <FaGithub className="p-1" />
-                    </button>
+                      className="p-2 inline-flex rounded-full border-2 transition-all ease-in duration-300 items-center text-center text-white hover:border-gray-700 hover:shadow-gray-900 hover:shadow-xl border-white text-5xl bg-transparent hover:bg-gray-900"
+                    />
                     <label
                       htmlFor="github"
                       className="text-md pl-2 text-white box-shadow-3d-minus"
@@ -346,19 +331,6 @@ function App() {
         <h1 className="text-lg text-white text-center p-4 bg-indigo-700">
           Esse site foi criado com muito 💜 & ☕
         </h1>
-        <div className="bg-indigo-700 ">
-          <div className="text-center items-center self-center justify-center justify-self-center">
-            <button
-              id="github"
-              className="rounded-full border-2 transition-all ease-in duration-300 p-1 items-center text-center text-white hover:border-gray-700 hover:shadow-gray-900 hover:shadow-xl border-white text-4xl bg-transparent hover:bg-gray-900"
-            >
-              <FaGithub className="p-1" />
-            </button>
-            <span className="-pt-20 text-md pl-2  text-white box-shadow-3d-minus inline-flex">
-              GuelBandeira
-            </span>
-          </div>
-        </div>
       </main>
       <div class="pk-loader">
         <svg id="triangle" viewBox="-3 -4 39 39">
