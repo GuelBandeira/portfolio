@@ -1,18 +1,20 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.558cea50.css",
-    "main.js": "/portfolio/static/js/main.c22af659.js",
-    "static/js/787.fb80194e.chunk.js": "/portfolio/static/js/787.fb80194e.chunk.js",
-    "static/media/etpc.png": "/portfolio/static/media/etpc.320f73014befe794d232.png",
-    "static/media/background2.png": "/portfolio/static/media/background2.8c5e02187459ca7125d2.png",
-    "static/media/etpc-mobile.png": "/portfolio/static/media/etpc-mobile.c05363ef7cb5278afe21.png",
+    "main.css": "/portfolio/static/css/main.540ead79.chunk.css",
+    "main.js": "/portfolio/static/js/main.61598c72.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.61598c72.chunk.js.map",
+    "runtime~main.js": "/portfolio/static/js/runtime~main.97874c6e.js",
+    "runtime~main.js.map": "/portfolio/static/js/runtime~main.97874c6e.js.map",
+    "static/css/2.451bf2e4.chunk.css": "/portfolio/static/css/2.451bf2e4.chunk.css",
+    "static/js/2.6ab5304b.chunk.js": "/portfolio/static/js/2.6ab5304b.chunk.js",
+    "static/js/2.6ab5304b.chunk.js.map": "/portfolio/static/js/2.6ab5304b.chunk.js.map",
+    "static/js/3.0711f24a.chunk.js": "/portfolio/static/js/3.0711f24a.chunk.js",
+    "static/js/3.0711f24a.chunk.js.map": "/portfolio/static/js/3.0711f24a.chunk.js.map",
     "index.html": "/portfolio/index.html",
-    "main.558cea50.css.map": "/portfolio/static/css/main.558cea50.css.map",
-    "main.c22af659.js.map": "/portfolio/static/js/main.c22af659.js.map",
-    "787.fb80194e.chunk.js.map": "/portfolio/static/js/787.fb80194e.chunk.js.map"
-  },
-  "entrypoints": [
-    "static/css/main.558cea50.css",
-    "static/js/main.c22af659.js"
-  ]
+    "precache-manifest.5ba2dafb8c77a6212a0902baad2385a3.js": "/portfolio/precache-manifest.5ba2dafb8c77a6212a0902baad2385a3.js",
+    "service-worker.js": "/portfolio/service-worker.js",
+    "static/css/2.451bf2e4.chunk.css.map": "/portfolio/static/css/2.451bf2e4.chunk.css.map",
+    "static/css/main.540ead79.chunk.css.map": "/portfolio/static/css/main.540ead79.chunk.css.map",
+    "static/media/App.css": "/portfolio/static/media/background2.ffcdaf35.png"
+  }
 }
