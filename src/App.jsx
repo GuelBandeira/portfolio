@@ -106,22 +106,7 @@ function App() {
             </div>
           </div>
         </header>
-        {/*
-         COOL ANIMATION
-  
-         <span class="flex h-3 w-3">
-          <span class="animate-ping absolute inline-flex h-screen w-full rounded-full bg-purple-400 opacity-75"></span>
-          <span class="relative inline-flex rounded-full h-3 w-3 bg-purple-500"></span>
-        </span> */}
-        {/* <div class="-mb-1 ">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-            <path
-              fill="#4F46E5"
-              fillOpacity="1"
-              d="M0,128L40,149.3C80,171,160,213,240,202.7C320,192,400,128,480,112C560,96,640,128,720,165.3C800,203,880,245,960,266.7C1040,288,1120,288,1200,266.7C1280,245,1360,203,1400,181.3L1440,160L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"
-            ></path>
-          </svg>
-        </div> */}
+
         <section className="text-white text-center self-center items-center mx-auto justify-center">
           <section id="wave" class="relative">
             <div class="wave wave1"></div>
