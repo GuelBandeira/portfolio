@@ -158,7 +158,7 @@ function App() {
               </Icon>
               <MainText>Criatividade</MainText>
               <SubText>
-                Sempre tento utilizar o máximo da minha criatividade no código &
+                Sempre vou utilizar o máximo da minha criatividade no código &
                 design.
               </SubText>
             </Card>

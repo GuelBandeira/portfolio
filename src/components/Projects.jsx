@@ -1,19 +1,8 @@
 import React from "react";
-import {
-  FaCheck,
-  FaCheckCircle,
-  FaDatabase,
-  FaHtml5,
-  FaPhp,
-  FaTable,
-} from "react-icons/fa";
+import { FaCheckCircle, FaDatabase, FaHtml5, FaPhp } from "react-icons/fa";
 import { SiJavascript, SiTailwindcss } from "react-icons/si";
 import { RiShareBoxFill } from "react-icons/ri";
-import Button from "./Button";
 import "../Projects.css";
-import etpc from "../images/etpc.png";
-import etpcMobile from "../images/etpc-mobile.png";
-import Card from "./Card/Card";
 import IconProjects from "./Projetos/IconProjects";
 import Video from "./Projetos/Video";
 const Projects = () => {
@@ -38,9 +27,18 @@ const Projects = () => {
         </div> */}
 
         <section className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-4 py-12 text-white">
-          <Video
+          <div className="embed-container mx-auto animate__animated animate__bounceInUp self-center max-w-2xl absolute shadow z-50 rounded-2xl">
+            <lite-youtube videoid="ogfYd705cRs">
+              <button type="button" class="lty-playbtn">
+                <span class="lyt-visually-hidden">
+                  Play Video: Keynote (Google I/O '18)
+                </span>
+              </button>
+            </lite-youtube>
+          </div>
+          {/* <Video
             linkVideo={"https://www.youtube.com/embed/LhSDtX5HCHQ"}
-          ></Video>
+          ></Video> */}
           <div className="w-full bg-indigo-600 shadow-indigo-900 shadow-2xl rounded-lg -mt-24 flex space-y-5 flex-col justify-center items-center">
             <h1
               className=" text-center text-3xl font-bold pt-32 font"
@@ -49,7 +47,7 @@ const Projects = () => {
               ETPC E-SPORTS
             </h1>
             <p
-              className="text-justify font-thin max-w-xl pt-9 pr-9 pl-9 lg:p-0 font"
+              className="text-justify font-thin max-w-xl pt-9 px-9 lg:p-0 font"
               data-aos="fade-zoom-in"
             >
               O site ETPC E-SPORTS faz parte da iniciativa de mesmo nome, criada
