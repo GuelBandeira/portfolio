@@ -5,7 +5,7 @@ import TypingEffect from "./components/TypingEffect";
 import { FaLinkedin, FaWhatsapp, FaCode, FaGithub } from "react-icons/fa";
 import Button from "./components/Button";
 import imagem from "../src/images/guel.png"; // with import
-import Projects from "./components/Projects";
+import Projects from "./components/Projetos/Projects";
 import AnimatedCursor from "react-animated-cursor";
 import { BiCodeBlock } from "react-icons/bi";
 import { IoIosColorPalette } from "react-icons/io";
@@ -138,7 +138,7 @@ function App() {
               <MainText>Front-end</MainText>
               <SubText>
                 Atualmente, eu tenho um maior foco por Front-end e amo utilizar
-                React.js junto com Tailwind CSS
+                React.js, assim como HTML puro e CSS
               </SubText>
             </Card>
             <Card>
@@ -147,19 +147,18 @@ function App() {
               </Icon>
               <MainText>Back-end</MainText>
               <SubText>
-                Um bom Front-end precisa de um bom Back-end, é o equilibrio para
-                criar um ótimo produto.
+                Eu sou apaixonado por PHP puro e sempre busco aprender mais para
+                futuramente me especializar nesse âmbito
               </SubText>
             </Card>
-
             <Card>
               <Icon>
                 <IoIosColorPalette />
               </Icon>
               <MainText>Criatividade</MainText>
               <SubText>
-                Sempre vou utilizar o máximo da minha criatividade no código &
-                design.
+                Sempre busco utilizar o máximo da minha criatividade no código &
+                design para criar um produto que sastifaça.
               </SubText>
             </Card>
           </ContainerCard>
@@ -209,9 +208,9 @@ function App() {
                 Comecei a programar quando tinha 15 anos, consequentemente fui
                 me apaixonando cada vez mais por esse mundo. Comecei a
                 desenvolver sites por hobby, e foi onde encontrei minha vocação
-                como FullStack, desde então venho sempre buscando aprimorar
-                minhas habilidades, além de aprender e me adaptar á novas
-                tecnologias do mercado.
+                como Full Stack, desde então venho sempre buscando novos
+                desafios e aprimorar minhas habilidades, além de aprender e me
+                adaptar á novas tecnologias do mercado.
               </p>
             </div>
             {/* SECAO CONTATO */}

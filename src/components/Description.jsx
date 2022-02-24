@@ -13,7 +13,7 @@ const Description = () => {
         <span className=" text-transparent transition ease-in-out duration-300 bg-clip-text bg-gradient-to-r from-indigo-500 to-indigo-600">
           Guel
         </span>
-        . Sou um desenvolvedor/programador trainee apaixonado por Full Stack.
+        . Sou um Desenvolvedor/Programador Junior apaixonado por Full Stack.
       </p>
     </>
   );

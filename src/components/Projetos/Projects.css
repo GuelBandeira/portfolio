@@ -51,3 +51,10 @@
 .font {
   font-family: "Open Sans", sans-serif;
 }
+
+.imagem-logo {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
