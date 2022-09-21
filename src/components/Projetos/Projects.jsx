@@ -162,7 +162,7 @@ const Projects = () => {
               className="text-justify font-thin max-w-xl pt-9 px-9 lg:p-0 font"
               data-aos="fade-zoom-in"
             >
-              O MY NFT CAR é um dos projetos dos quais mais me orgulho de ter feito, pois foi muito gratificante de construir o website tentando ao máximo me desafiar e deixá-lo o mais bonito e fiel á proposta possível:
+              O Nyx Soul além de ter sido o meu primeiro contato com a web3, fazendo a integração com a blockchain por meio da conexão da carteira do Metamask, também foi um dos projetos mais divertidos de se criar. O Nyx Soul é um formulário de múltiplas etapas criado em Javascript, com intuito de gerar uma imagem NFT por meio de suas ramificações de escolhas dentre as questões do formulário.
               <br></br>
               <span className="p-4">
                 <IconProjects>
@@ -185,7 +185,7 @@ const Projects = () => {
               <a
                 target="_blank"
                 rel="noopener noreferrer"
-                href="https://mynftcar.io/"
+                href="https://individuation.nyxsoul.io"
               >
                 <button className="item3 button hover:shadow-2xl text-indigo-600 hover:shadow-black bg-white rounded-xl text-lg p-3 relative  justify-center overflow-hidden duration-1000 transform ease-in-out hover:text-white  ">
                   <RiShareBoxFill className="inline-flex mb-1 mr-1 font-bold" />
@@ -217,8 +217,7 @@ const Projects = () => {
               className="text-justify font-thin max-w-xl pt-9 px-9 lg:p-0 font"
               data-aos="fade-zoom-in"
             >
-              O MY NFT CAR é um dos projetos dos quais mais me orgulho de ter feito, pois foi muito gratificante de construir o website tentando ao máximo me desafiar e deixá-lo o mais bonito e fiel á proposta possível:
-              <br></br>
+O projeto do aplicativo/sistema Bitway foi o projeto mais desafiador que já trabalhei, me empenhei ao máximo para realizá-lo, além de aprender com cada passo que fui dando. A proposta do aplicativo é fornecer um espaço para anunciar os estabelecimentos a venderem o seu produto, com foco no delivery de comida, porém com o diferencial de ter franqueados, sendo eles responsáveis pelas lojas cadastradas com seu código da sua respectiva região:      <br></br>
               <span className="p-4">
                 <IconProjects>
                   <FaCheckCircle className="inline-flex mr-2 mb-1" />
@@ -240,7 +239,7 @@ const Projects = () => {
               <a
                 target="_blank"
                 rel="noopener noreferrer"
-                href="https://mynftcar.io/"
+                href="https://dev.bitwaytoken.com/"
               >
                 <button className="item3 button hover:shadow-2xl text-indigo-600 hover:shadow-black bg-white rounded-xl text-lg p-3 relative  justify-center overflow-hidden duration-1000 transform ease-in-out hover:text-white  ">
                   <RiShareBoxFill className="inline-flex mb-1 mr-1 font-bold" />
