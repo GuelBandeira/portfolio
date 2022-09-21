@@ -1,18 +1,20 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.1d41bf19.css",
-    "main.js": "/portfolio/static/js/main.22dfa552.js",
+    "main.css": "/portfolio/static/css/main.cc25edef.css",
+    "main.js": "/portfolio/static/js/main.4b1253f3.js",
     "static/js/787.fb80194e.chunk.js": "/portfolio/static/js/787.fb80194e.chunk.js",
-    "static/media/shopping33.png": "/portfolio/static/media/shopping33.c30d6c533eaf2a54c428.png",
+    "static/media/bitway.png": "/portfolio/static/media/bitway.48058cda81e7a8a75736.png",
     "static/media/etpcesports.png": "/portfolio/static/media/etpcesports.fae89d9d387ab873dca7.png",
-    "static/media/background2.webp": "/portfolio/static/media/background2.ba3f9aeab78c78e7c405.webp",
+    "static/media/mycar.png": "/portfolio/static/media/mycar.28b4dca44002937ba7ec.png",
+    "static/media/formulario.png": "/portfolio/static/media/formulario.d41c784131920fc77480.png",
+    "static/media/background2.webp": "/portfolio/static/media/background2.8ecc7ceda859b1893e3b.webp",
     "index.html": "/portfolio/index.html",
-    "main.1d41bf19.css.map": "/portfolio/static/css/main.1d41bf19.css.map",
-    "main.22dfa552.js.map": "/portfolio/static/js/main.22dfa552.js.map",
+    "main.cc25edef.css.map": "/portfolio/static/css/main.cc25edef.css.map",
+    "main.4b1253f3.js.map": "/portfolio/static/js/main.4b1253f3.js.map",
     "787.fb80194e.chunk.js.map": "/portfolio/static/js/787.fb80194e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1d41bf19.css",
-    "static/js/main.22dfa552.js"
+    "static/css/main.cc25edef.css",
+    "static/js/main.4b1253f3.js"
   ]
 }
